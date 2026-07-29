@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نزهت پٺاڻ - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">NP</div>
+      <h1>نزهت پٺاڻ</h1>
+      <div class="author-english-sub">NUZHAT PATHAN</div>
+      <p>ڪُل <span id="visibleCount">3</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2004')">2004ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_2.html" class="article-card" data-title="سياڻن جي دنيا هٿان ماريل هڪ ”چري“ ماءُ!" data-year="2004" data-snippet="”н«ڻд ћн ѕдн« еٿ«д г«—нб еڪ фн—ну г«ѕх! ”жг— 9 ён»—ж—н 2004џ »ў«е— ежѕу —едѕн е «д”«дд ћн жн ۾ е∆н° б— е«ڻн ћڏед «д шн гбнб «–н д ћн ڪе«ڻн ”«гежд ¬∆н ¬ен е бڳн ٿж° ڄڻ ежѕу ѕ—дѕд ћн..."><div class="card-header-row"><h2 class="card-title">سياڻن جي دنيا هٿان ماريل هڪ ”چري“ ماءُ!</h2><span class="card-date">سومر 9 فيبروري 2004ع</span></div><p class="card-snippet">”н«ڻд ћн ѕдн« еٿ«д г«—нб еڪ ФН—нУ г«Ѕх! ”жг— 9 Ён»—ж—н 2004Џ »ў«е— ежЅу —едѕн е «д”«дд ћн жН ۾ е∆н° Б— е«ڻн ћڏед «д Шн гбнб «–н д ћн ڪе«ڻн ”«гежд ¬∆н ¬ен е бڳн ٿж° ڄڻ ежЅу ѕ—дѕд ћн...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2004ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="سنڌ سان ٿيندڙ اذيتن جي ذميواري ڪير قبوليندو؟" data-year="2004" data-snippet="”дڌ ”«д ٿндѕڙ «–н д ћн –гнж«—н ڪн— ё»жбндѕжњ ”жг— 14 ћжд 2004џ ڪн —д ڏндед ш«д жٺн гжд ”дڌ ћн г”∆бд н бшڻ бн н«енж° б— бдедћн ”н«”н бж“н‘д ћн ڪ—н ڪٿн ڪٿн б«ڻ шн б«»дѕ бн ”гћенг е г..."><div class="card-header-row"><h2 class="card-title">سنڌ سان ٿيندڙ اذيتن جي ذميواري ڪير قبوليندو؟</h2><span class="card-date">سومر 14 جون 2004ع</span></div><p class="card-snippet">”дڌ ”«д ٿндѕڙ «–н д ћн –гнж«—н ڪн— ё»жбндѕжњ ”жг— 14 ћжд 2004Џ ڪн —д ڏндед Ш«д жٺн гжд ”дڌ ћн г”∆бд н бШڻ Бн Н«енж° Б— Бдедћн ”н«”н Бж“н‘д ћн ڪ—н ڪٿн ڪٿн Б«ڻ Шн Б«»дѕ Бн ”гћенг е г...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2004ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="سنڌي عورت جو درد ۽ لاتعلقيءَ وارا رويا" data-year="2004" data-snippet="”дڌн џж— ћж ѕ—ѕ ۽ б« џбёнѕу ж«—« —жн« ¬н— бе—нд ён»—ж—н 2004џ ”н ڳ«бе«∆ڻ ж«ёџн »е еڪ ћжшг ћж ڪг »ڻћн жнж ¬ен. е н «н —н е ٻе—жб ћн »«б«ѕ” н жڌн жн∆н ¬ен° ћж ”н ڳ«бе«∆ڻ ж«—ж ڪ«ён ћڳ..."><div class="card-header-row"><h2 class="card-title">سنڌي عورت جو درد ۽ لاتعلقيءَ وارا رويا</h2><span class="card-date">آچر پهرين فيبروري 2004ع</span></div><p class="card-snippet">”дڌн Џж— ћж ѕ—ѕ ۽ б« ЏбёнЅу ж«—« —жн« ¬Н— Бе—нд Ён»—ж—н 2004Џ ”Н ڳ«бе«∆ڻ ж«ёЏн »е еڪ ћжШг ћж ڪг »ڻћн жнж ¬ен. е н «н —н е ٻе—жБ ћн »«б«ѕ” н жڌн жн∆н ¬ен° ћж ”Н ڳ«бе«∆ڻ ж«—ж ڪ«Ён ћڳ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2004ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>

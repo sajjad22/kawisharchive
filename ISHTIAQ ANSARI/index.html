@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اشتياق انصاري - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">IA</div>
+      <h1>اشتياق انصاري</h1>
+      <div class="author-english-sub">ISHTIAQ ANSARI</div>
+      <p>ڪُل <span id="visibleCount">18</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2014')">2014ع</button>
+<button class="filter-btn" onclick="filterYear('2013')">2013ع</button>
+<button class="filter-btn" onclick="filterYear('2012')">2012ع</button>
+<button class="filter-btn" onclick="filterYear('2011')">2011ع</button>
+<button class="filter-btn" onclick="filterYear('2010')">2010ع</button>
+<button class="filter-btn" onclick="filterYear('2009')">2009ع</button>
+<button class="filter-btn" onclick="filterYear('2008')">2008ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_17.html" class="article-card" data-title="اديب ۽ دانشور قومن لاءِ مشعل راهه هوندا آهن" data-year="2014" data-snippet="«ѕн» ۽ ѕ«д‘ж— ёжгд б«ѕц г‘џб —«ее еждѕ« ¬ед ڇдڇ— 25 ћдж—н 2014џ «ѕн» ۽ ѕ«д‘ж— бдедћн г«ڻед ۽ ёжгд б«ѕц г‘џб —«ее еждѕ« ¬ед° ћнڪн б«ڻ бнн бڄ—н бжڪ шн –едн џб«гнѕу ћн џ«—д г«д ڪڍн ‘џ..."><div class="card-header-row"><h2 class="card-title">اديب ۽ دانشور قومن لاءِ مشعل راهه هوندا آهن</h2><span class="card-date">ڇنڇر 25 جنوري 2014ع</span></div><p class="card-snippet">«ѕн» ۽ ѕ«д‘ж— ёжгд б«Ѕц г‘Џб —«ее еждѕ« ¬ед ڇдڇ— 25 ћдж—н 2014Џ «ѕн» ۽ ѕ«д‘ж— Бдедћн г«ڻед ۽ ёжгд б«Ѕц г‘Џб —«ее еждѕ« ¬ед° ћнڪн Б«ڻ БНн Бڄ—н бжڪ Шн –едн џб«гнЅу ћн џ«—д г«д ڪڍн ‘Џ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_14.html" class="article-card" data-title="سُور کائي شعور پاتم" data-year="2013" data-snippet="”хж— ш«∆н ‘џж— б« г «ڱ«—ж бе—нд ¬ڪٽж»— 2013џ «”«д ж«—н ٽен° «е« »ѕд’н» ٽен ¬ен° ћдед ڪн —нжд ∆н ёе—н г«— ‘б б«∆жд ۽ ён«г ќн“ ڪ—»б«∆жд ڏٺнжд ¬ед. «”«д ж«—н д”б° ў«бг ÷н«ѕу ћн гж г«—..."><div class="card-header-row"><h2 class="card-title">سُور کائي شعور پاتم</h2><span class="card-date">اڱارو پهرين آڪٽوبر 2013ع</span></div><p class="card-snippet">”хж— Ш«∆н ‘Џж— Б« г «ڱ«—ж Бе—нд ¬ڪٽж»— 2013Џ «”«д ж«—н ٽен° «е« »ѕд’н» ٽен ¬ен° ћдед ڪн —нжд ∆н ёе—н г«— ‘б б«∆жд ۽ ён«г ќн“ ڪ—»б«∆жд ڏٺнжд ¬ед. «”«д ж«—н д”б° ў«бг ÷н«Ѕу ћн гж г«—...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_5.html" class="article-card" data-title="مزاحمتي محاذ سنڀاليندڙ سنڌ جو قلم قبيلو" data-year="2013" data-snippet="г“«ќг н гќ«– ”дڀ«бндѕڙ ”дڌ ћж ёбг ё»нбж «ڱ«—ж 12 ён»—ж—н 2013џ ”дڌн г«ڻеж «“б ш«д жٺн ڌ— нѕу ћж бжڄ«—н —енж ¬ен° ڌ— нѕу н «ڃ« г–е»д ћн «ж”— ڪ«де ٿн е∆н. ”дڌ ۾ едѕж ڌ—г° ٻڌ ڌ—г ۽ «”..."><div class="card-header-row"><h2 class="card-title">مزاحمتي محاذ سنڀاليندڙ سنڌ جو قلم قبيلو</h2><span class="card-date">اڱارو 12 فيبروري 2013ع</span></div><p class="card-snippet">г“«Ќг н гЌ«– ”дڀ«бндѕڙ ”дڌ ћж ёбг ё»нбж «ڱ«—ж 12 Ён»—ж—н 2013Џ ”дڌн г«ڻеж «“б Ш«д жٺн ڌ— нЅу ћж Бжڄ«—н —енж ¬ен° ڌ— нЅу н «ڃ« г–е»д ћн «ж”— ڪ«де ٿн е∆н. ”дڌ ۾ едѕж ڌ—г° ٻڌ ڌ—г ۽ «”...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_7.html" class="article-card" data-title="لائبريري گهر جو روح ٿئي ٿي" data-year="2013" data-snippet="б«∆»—н—н ре— ћж —жќ ٿ∆н ٿн ¬н— 15 ڊ”г»— 2013џ ڪ∆г»—ћ ۾ —еڻ ѕж—«д° «ڪћ— ڪ—н гжڪбд ж«—д ڏндед ۾° ”ё—н ٿнбеж бٺ«ڙд н ٻڌн° «дрбндڊ ۾ ڪдед де ڪдед г«ڳ ڏ«дед гдед ڪ»ж еж. «∆нд жнб“ ћн гќ..."><div class="card-header-row"><h2 class="card-title">لائبريري گهر جو روح ٿئي ٿي</h2><span class="card-date">آچر 15 ڊسمبر 2013ع</span></div><p class="card-snippet">б«∆»—н—н Ре— ћж —жЌ ٿ∆н ٿн ¬Н— 15 ڊ”г»— 2013Џ ڪ∆г»—ћ ۾ —еڻ ѕж—«д° «ڪЋ— ڪ—н гжڪбд ж«—д ڏндед ۾° ”Ё—н ٿнбеж Бٺ«ڙд н ٻڌн° «дРбндڊ ۾ ڪдед де ڪдед г«ڳ ڏ«дед гдед ڪ»ж еж. «∆нд жнб“ ћн гќ...</p><div class="card-footer"><span>⏱️ 9 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_18.html" class="article-card" data-title="ورهاڱي وقت لڏپلاڻ ۾ سنڌي جاگيردارن جو هٿ" data-year="2013" data-snippet="ж—е«ڱн жё бڏбб«ڻ ۾ ”дڌн ћ«рн—ѕ«—д ћж еٿ ¬н— 08 ”нбٽг»— 2013џ «”«д «—нќ ћн ж—ёд н дў— жћедѕ«”нд е гџбжг ٿндѕж е «ж«∆бн “г«дн ш«д жٺн ڪн —нжд ёжгжд ۽ ёжгн жд еڪ ٻ∆н ќб«ё ќ«б ц ћдр ۾ ..."><div class="card-header-row"><h2 class="card-title">ورهاڱي وقت لڏپلاڻ ۾ سنڌي جاگيردارن جو هٿ</h2><span class="card-date">آچر 08 سيپٽمبر 2013ع</span></div><p class="card-snippet">ж—е«ڱн жё бڏБб«ڻ ۾ ”дڌн ћ«Рн—ѕ«—д ћж еٿ ¬Н— 08 ”нБٽг»— 2013Џ «”«д «—нќ ћн ж—ёд н дў— жћедѕ«”нд е гЏбжг ٿндѕж е «ж«∆бн “г«дн Ш«д жٺн ڪн —нжд ёжгжд ۽ ёжгн жд еڪ ٻ∆н ќб«Ё Ќ«б ц ћдР ۾ ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_12.html" class="article-card" data-title="تڪراري مڪاني نظام خلاف قلمڪارن جي هلندڙ جدوجهد" data-year="2012" data-snippet="ڪ—«—н гڪ«дн дў«г ќб«ё ёбгڪ«—д ћн ебдѕڙ ћѕжћеѕ «ڱ«—ж 27 джг»— 2012џ —ж” ћн »«џн «ѕн»° тѕн ڪнд”— ж«—ڊс ћн ќ«бё «бнр“ндڊ— ”жб“н дٽ‘д бшнж ¬ен е° фڪдед »е гбڪ ۾ еڪ жڏж «ѕн» еڪ ٻн ”—ڪ«—..."><div class="card-header-row"><h2 class="card-title">تڪراري مڪاني نظام خلاف قلمڪارن جي هلندڙ جدوجهد</h2><span class="card-date">اڱارو 27 نومبر 2012ع</span></div><p class="card-snippet">ڪ—«—н гڪ«дн дў«г ќб«Ё ёбгڪ«—д ћн ебдѕڙ ћѕжћеѕ «ڱ«—ж 27 джг»— 2012Џ —ж” ћн »«џн «ѕн»° Тѕн ڪнд”— ж«—ڊС ћн ќ«бё «бнР“ндڊ— ”жб“н дٽ‘д бШнж ¬ен е° Фڪдед »е гбڪ ۾ еڪ жڏж «ѕн» еڪ ٻн ”—ڪ«—...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2012ع</span></div></a><a href="articles/art_2.html" class="article-card" data-title="عوامي تاريخ قصن ڪهاڻين ۾ ئي محفوظ ٿي سگهي ٿي!" data-year="2011" data-snippet="عوامي تاريخ قصن ڪهاڻين ۾ ئي محفوظ ٿي سگهي ٿي! سومر 27 جون 2011ع اوائلي زماني ۾ ماڻهو جڏهن به ڪنهن سير سفر دوران نئين شيءِ ڏسندا هئا، يا ڪو ٺاهوڪو شڪار ڪندا هئا ۽ واپس اچي وڏي لانڍ ..."><div class="card-header-row"><h2 class="card-title">عوامي تاريخ قصن ڪهاڻين ۾ ئي محفوظ ٿي سگهي ٿي!</h2><span class="card-date">سومر 27 جون 2011ع</span></div><p class="card-snippet">عوامي تاريخ قصن ڪهاڻين ۾ ئي محفوظ ٿي سگهي ٿي! سومر 27 جون 2011ع اوائلي زماني ۾ ماڻهو جڏهن به ڪنهن سير سفر دوران نئين شيءِ ڏسندا هئا، يا ڪو ٺاهوڪو شڪار ڪندا هئا ۽ واپس اچي وڏي لانڍ ...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2011ع</span></div></a><a href="articles/art_10.html" class="article-card" data-title="سنڌ جي گمشده تاريخ کي ڪير ڳوليندو؟" data-year="2011" data-snippet="سنڌ جي گمشده تاريخ کي ڪير ڳوليندو؟ اربع 23 فيبروري 2011ع سنڌ جي تاريخ جو وڏو الميو اهوآهي ته سنڌ جي تاريخ جو بنياد، ڌارين جي لکيل روايتن تي ٻڌل چند ڪتابن تي آهي. اوائلي زماني ۾ ڪو ..."><div class="card-header-row"><h2 class="card-title">سنڌ جي گمشده تاريخ کي ڪير ڳوليندو؟</h2><span class="card-date">اربع 23 فيبروري 2011ع</span></div><p class="card-snippet">سنڌ جي گمشده تاريخ کي ڪير ڳوليندو؟ اربع 23 فيبروري 2011ع سنڌ جي تاريخ جو وڏو الميو اهوآهي ته سنڌ جي تاريخ جو بنياد، ڌارين جي لکيل روايتن تي ٻڌل چند ڪتابن تي آهي. اوائلي زماني ۾ ڪو ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2011ع</span></div></a><a href="articles/art_6.html" class="article-card" data-title="هڪ انجنيئر جي ٻوڏ دوران بند تي لکيل ڊائري" data-year="2010" data-snippet="هڪ انجنيئر جي ٻوڏ دوران بند تي لکيل ڊائري سومر 27 سيپٽمبر 2010ع چوڦير اونداهي ڦهليل آهي، مان بند تي عارضي قائم ڪيل ڪئمپ پهچي چوڪيدار کان ڪالهوڪي ٻوڏ ۾ لڙهي آيل همراهه جي باري ۾ پڇا..."><div class="card-header-row"><h2 class="card-title">هڪ انجنيئر جي ٻوڏ دوران بند تي لکيل ڊائري</h2><span class="card-date">سومر 27 سيپٽمبر 2010ع</span></div><p class="card-snippet">هڪ انجنيئر جي ٻوڏ دوران بند تي لکيل ڊائري سومر 27 سيپٽمبر 2010ع چوڦير اونداهي ڦهليل آهي، مان بند تي عارضي قائم ڪيل ڪئمپ پهچي چوڪيدار کان ڪالهوڪي ٻوڏ ۾ لڙهي آيل همراهه جي باري ۾ پڇا...</p><div class="card-footer"><span>⏱️ 9 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_16.html" class="article-card" data-title="آئون ساريالي علائقي جي پيدائش آهيان" data-year="2010" data-snippet="آئون ساريالي علائقي جي پيدائش آهيان اربع 20 آڪٽوبر 2010ع اسان سنڌ واسين جو جيئن، ڏيهه توڙي پرڏيهه ۾، موهن جو دڙو سڃاڻپ آهي، تيئن ڀٽو صاحب به هڪ سڃاڻپ بڻجي ويو آهي. ذوالفقار علي ڀٽو..."><div class="card-header-row"><h2 class="card-title">آئون ساريالي علائقي جي پيدائش آهيان</h2><span class="card-date">اربع 20 آڪٽوبر 2010ع</span></div><p class="card-snippet">آئون ساريالي علائقي جي پيدائش آهيان اربع 20 آڪٽوبر 2010ع اسان سنڌ واسين جو جيئن، ڏيهه توڙي پرڏيهه ۾، موهن جو دڙو سڃاڻپ آهي، تيئن ڀٽو صاحب به هڪ سڃاڻپ بڻجي ويو آهي. ذوالفقار علي ڀٽو...</p><div class="card-footer"><span>⏱️ 10 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_4.html" class="article-card" data-title="گوتم ٻڌ، سنڌ ۽ سڏيرڻ جو ٺل!" data-year="2010" data-snippet="گوتم ٻڌ، سنڌ ۽ سڏيرڻ جو ٺل! اربع 10 فيبروري 2010ع برصغير جي مذهبي تاريخن جا ورق ورايون ٿا ته ساڍا پنج سئو قبل مسيح ڌاري ڪيترن انسان دوست ڏاهن جو ڏس ملي ٿو، جن هتان جي ماڻهن کي ذات ..."><div class="card-header-row"><h2 class="card-title">گوتم ٻڌ، سنڌ ۽ سڏيرڻ جو ٺل!</h2><span class="card-date">اربع 10 فيبروري 2010ع</span></div><p class="card-snippet">گوتم ٻڌ، سنڌ ۽ سڏيرڻ جو ٺل! اربع 10 فيبروري 2010ع برصغير جي مذهبي تاريخن جا ورق ورايون ٿا ته ساڍا پنج سئو قبل مسيح ڌاري ڪيترن انسان دوست ڏاهن جو ڏس ملي ٿو، جن هتان جي ماڻهن کي ذات ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_13.html" class="article-card" data-title="سنڌ ۾ موتمار ٻوڏ ڇو ٿي اچي؟" data-year="2010" data-snippet="سنڌ ۾ موتمار ٻوڏ ڇو ٿي اچي؟ آچر 5 سيپٽمبر 2010ع لداخ جي ماڻهن جو اهو ايمان آهي ته”شينهن درياهه جو پاڻي پيئندڙ ماڻهو بهادر ۽ شينهن جهڙو دلير هوندو آهي“. سنڌو جڏهن سورنهن هزار فٽن جي..."><div class="card-header-row"><h2 class="card-title">سنڌ ۾ موتمار ٻوڏ ڇو ٿي اچي؟</h2><span class="card-date">آچر 5 سيپٽمبر 2010ع</span></div><p class="card-snippet">سنڌ ۾ موتمار ٻوڏ ڇو ٿي اچي؟ آچر 5 سيپٽمبر 2010ع لداخ جي ماڻهن جو اهو ايمان آهي ته”شينهن درياهه جو پاڻي پيئندڙ ماڻهو بهادر ۽ شينهن جهڙو دلير هوندو آهي“. سنڌو جڏهن سورنهن هزار فٽن جي...</p><div class="card-footer"><span>⏱️ 9 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="سنڌ ڌرتي جي ابتدا ۽ آڳاٽا سنڌي ماڻهو" data-year="2010" data-snippet="سنڌ ڌرتي جي ابتدا ۽ آڳاٽا سنڌي ماڻهو آچر 28 مارچ 2010ع اسان جي مورخن، سنڌ جي حڪمرانن جي تاريخ تي ڪافي ڪجهه لکيو آهي، ان ۾ اڪثر تاريخون ته روايتن ۽ لوڪ ڪٿائن جو شاهڪار آهن، جن جو اڃ..."><div class="card-header-row"><h2 class="card-title">سنڌ ڌرتي جي ابتدا ۽ آڳاٽا سنڌي ماڻهو</h2><span class="card-date">آچر 28 مارچ 2010ع</span></div><p class="card-snippet">سنڌ ڌرتي جي ابتدا ۽ آڳاٽا سنڌي ماڻهو آچر 28 مارچ 2010ع اسان جي مورخن، سنڌ جي حڪمرانن جي تاريخ تي ڪافي ڪجهه لکيو آهي، ان ۾ اڪثر تاريخون ته روايتن ۽ لوڪ ڪٿائن جو شاهڪار آهن، جن جو اڃ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="سرڪش ۽ باغي ڪردارن جو شهر" data-year="2010" data-snippet="سرڪش ۽ باغي ڪردارن جو شهر آچر 26 ڊسمبر 2010ع لاڙڪاڻي شهر ۾ شام ڌاري، هوا خوريءَ لاءِ سندرا ٻڌي رهيو هيس ته اخلاق انصاري جو فون تي روئڻهارڪو آواز آيو، ”بينظير ڀٽو شهيد ٿي وئي آهي......"><div class="card-header-row"><h2 class="card-title">سرڪش ۽ باغي ڪردارن جو شهر</h2><span class="card-date">آچر 26 ڊسمبر 2010ع</span></div><p class="card-snippet">سرڪش ۽ باغي ڪردارن جو شهر آچر 26 ڊسمبر 2010ع لاڙڪاڻي شهر ۾ شام ڌاري، هوا خوريءَ لاءِ سندرا ٻڌي رهيو هيس ته اخلاق انصاري جو فون تي روئڻهارڪو آواز آيو، ”بينظير ڀٽو شهيد ٿي وئي آهي......</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2010ع</span></div></a><a href="articles/art_9.html" class="article-card" data-title="گورک جي ترقي ۽ اتان جا بي گهر ٿيندڙ اصلوڪا ماڻهو!" data-year="2009" data-snippet="گورک جي ترقي ۽ اتان جا بي گهر ٿيندڙ اصلوڪا ماڻهو! ڇنڇر 3 آڪٽوبر 2009ع سنڌ جي فتح بعد انگريز عملدارن هن اداس وادي جي ساڙيندڙ اس ۽ گرمي کان بيچين ٿي ڪنهن بلند ۽ سرد هنڌ خيما کوڙڻ لاء..."><div class="card-header-row"><h2 class="card-title">گورک جي ترقي ۽ اتان جا بي گهر ٿيندڙ اصلوڪا ماڻهو!</h2><span class="card-date">ڇنڇر 3 آڪٽوبر 2009ع</span></div><p class="card-snippet">گورک جي ترقي ۽ اتان جا بي گهر ٿيندڙ اصلوڪا ماڻهو! ڇنڇر 3 آڪٽوبر 2009ع سنڌ جي فتح بعد انگريز عملدارن هن اداس وادي جي ساڙيندڙ اس ۽ گرمي کان بيچين ٿي ڪنهن بلند ۽ سرد هنڌ خيما کوڙڻ لاء...</p><div class="card-footer"><span>⏱️ 9 منٽ</span><span class="card-meta-tag">2009ع</span></div></a><a href="articles/art_8.html" class="article-card" data-title="پٿر جي دور جون نشانيون رکندڙ ماڳ جي تباهي!" data-year="2009" data-snippet="پٿر جي دور جون نشانيون رکندڙ ماڳ جي تباهي! جمع 28 آگسٽ 2009ع شاهه ڀٽائي جي سر کاهوڙي ۽ رام ڪلي اهڙو ته موهيو جو سانداري ڪڇ ۾ ۽ گودڙي ڪلهي تي رکي جوڳين جي سنگ لاهوت ۽ هنگلاج جي سفر ..."><div class="card-header-row"><h2 class="card-title">پٿر جي دور جون نشانيون رکندڙ ماڳ جي تباهي!</h2><span class="card-date">جمع 28 آگسٽ 2009ع</span></div><p class="card-snippet">پٿر جي دور جون نشانيون رکندڙ ماڳ جي تباهي! جمع 28 آگسٽ 2009ع شاهه ڀٽائي جي سر کاهوڙي ۽ رام ڪلي اهڙو ته موهيو جو سانداري ڪڇ ۾ ۽ گودڙي ڪلهي تي رکي جوڳين جي سنگ لاهوت ۽ هنگلاج جي سفر ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2009ع</span></div></a><a href="articles/art_15.html" class="article-card" data-title="سدائين سنڌين تي ڪاوڙ جو اظهار ڪندڙ سنڌي!" data-year="2009" data-snippet="سدائين سنڌين تي ڪاوڙ جو اظهار ڪندڙ سنڌي! آچر 2 آگسٽ 2009ع سنجها ڌاري، حيدرآباد شهر جي هڪ ڪلب ۾ جاگنگ بعد باغيچي ۾ ڪرسي تي ويهي پاڻي پي رهيو هيس ته ڀرسان ڪجهه کڙپيل سنڌي ڪامورا به و..."><div class="card-header-row"><h2 class="card-title">سدائين سنڌين تي ڪاوڙ جو اظهار ڪندڙ سنڌي!</h2><span class="card-date">آچر 2 آگسٽ 2009ع</span></div><p class="card-snippet">سدائين سنڌين تي ڪاوڙ جو اظهار ڪندڙ سنڌي! آچر 2 آگسٽ 2009ع سنجها ڌاري، حيدرآباد شهر جي هڪ ڪلب ۾ جاگنگ بعد باغيچي ۾ ڪرسي تي ويهي پاڻي پي رهيو هيس ته ڀرسان ڪجهه کڙپيل سنڌي ڪامورا به و...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2009ع</span></div></a><a href="articles/art_11.html" class="article-card" data-title="ديارِ غير ۾سنڌين جو ميلو!" data-year="2008" data-snippet="ديارِ غير ۾سنڌين جو ميلو! ڇنڇر 16 آگسٽ 2008ع جان ايف ڪينيڊي جي رت سان رڱيل شهر ڊلس ۾ سانا (سنڌي ايسوسيئيشن آف نارٿ آمريڪا) جو 24 ساليانو ڪنوينشن شروع ٿيڻ وارو هو.آمريڪا ۾ رهندڙ دوس..."><div class="card-header-row"><h2 class="card-title">ديارِ غير ۾سنڌين جو ميلو!</h2><span class="card-date">ڇنڇر 16 آگسٽ 2008ع</span></div><p class="card-snippet">ديارِ غير ۾سنڌين جو ميلو! ڇنڇر 16 آگسٽ 2008ع جان ايف ڪينيڊي جي رت سان رڱيل شهر ڊلس ۾ سانا (سنڌي ايسوسيئيشن آف نارٿ آمريڪا) جو 24 ساليانو ڪنوينشن شروع ٿيڻ وارو هو.آمريڪا ۾ رهندڙ دوس...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2008ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>

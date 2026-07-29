@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تاج جويو - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">TJ</div>
+      <h1>تاج جويو</h1>
+      <div class="author-english-sub">TAJ JOYO</div>
+      <p>ڪُل <span id="visibleCount">15</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2016')">2016ع</button>
+<button class="filter-btn" onclick="filterYear('2015')">2015ع</button>
+<button class="filter-btn" onclick="filterYear('2014')">2014ع</button>
+<button class="filter-btn" onclick="filterYear('2013')">2013ع</button>
+<button class="filter-btn" onclick="filterYear('2012')">2012ع</button>
+<button class="filter-btn" onclick="filterYear('2008')">2008ع</button>
+<button class="filter-btn" onclick="filterYear('2007')">2007ع</button>
+<button class="filter-btn" onclick="filterYear('2006')">2006ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_14.html" class="article-card" data-title="جيڪي مُئي ڪندا، سو جانب ڪريو جيئري!" data-year="2016" data-snippet="جيڪي مُئي ڪندا، سو جانب ڪريو جيئري! پرواني ڀٽيءَ جو سنڌيءَ جي معمر، ڪُهنه مشق ۽ باوقار شاعرن ۾ شمار ٿئي ٿو. سنڌي ادب جي سمورين تحريڪن ۽ تنظيمن جمعيت الشعراءِ سنڌ، بزم طالب الموليٰ،..."><div class="card-header-row"><h2 class="card-title">جيڪي مُئي ڪندا، سو جانب ڪريو جيئري!</h2><span class="card-date">سومر 07 نومبر 2016ع</span></div><p class="card-snippet">جيڪي مُئي ڪندا، سو جانب ڪريو جيئري! پرواني ڀٽيءَ جو سنڌيءَ جي معمر، ڪُهنه مشق ۽ باوقار شاعرن ۾ شمار ٿئي ٿو. سنڌي ادب جي سمورين تحريڪن ۽ تنظيمن جمعيت الشعراءِ سنڌ، بزم طالب الموليٰ،...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="اي سنڌ توکي الوداع!" data-year="2015" data-snippet="«н ”дڌ жшн «бжѕ«џ! ћгџ 13 ён»—ж—н 2015џ «ڍ«∆н ”∆ж ”«б «ڳ ‘«ее бўнё ”дڌ ћн џўнг гќ» жўд ڪ—ѕ«— г«—∆н ћн ёнѕ ѕж—«д ѕбн ڪнён »н«д ڪдѕн ннж еж: ж«ће«∆н жўд шн° ”«—н ”«ее ڏн«д° ен ”— ”«ڻ..."><div class="card-header-row"><h2 class="card-title">اي سنڌ توکي الوداع!</h2><span class="card-date">جمع 13 فيبروري 2015ع</span></div><p class="card-snippet">«н ”дڌ жШн «бжѕ«Џ! ћгЏ 13 Ён»—ж—н 2015Џ «ڍ«∆н ”∆ж ”«б «ڳ ‘«ее бЎнЁ ”дڌ ћн Џўнг гЌ» жЎд ڪ—ѕ«— г«—∆н ћн ёнѕ ѕж—«д ѕбн ڪнЁн »н«д ڪдѕн Ннж еж: ж«ће«∆н жЎд Шн° ”«—н ”«ее ڏн«д° ен ”— ”«ڻ...</p><div class="card-footer"><span>⏱️ 2 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="...۽ هُن جي ڌرتيءَ کي چُمي اڌ ۾ رهجي وئي!" data-year="2015" data-snippet="...۽ ехд ћн ڌ— нѕу шн нхгн «ڌ ۾ —ећн ж∆н! ћгџ 08 г∆н 2015џ «б«! ”дڌ шн енѕу ڪеڙн »ѕдў— бڳн ¬ен° ћж 3 г∆н 2015џ н «у”— жнб ”«∆нд ћн «нг ”нѕ ћн ёڪ— ћж ”нж ‘«—ќх ۽ ”дڌ ћн ¬ћбн ж«—н ё«..."><div class="card-header-row"><h2 class="card-title">...۽ هُن جي ڌرتيءَ کي چُمي اڌ ۾ رهجي وئي!</h2><span class="card-date">جمع 08 مئي 2015ع</span></div><p class="card-snippet">...۽ ехд ћн ڌ— нЅу Шн Нхгн «ڌ ۾ —ећн ж∆н! ћгЏ 08 г∆н 2015Џ «б«! ”дڌ Шн енЅу ڪеڙн »ѕдў— бڳн ¬ен° ћж 3 г∆н 2015Џ н «у”— жнб ”«∆нд ћн «нг ”нѕ ћн Ёڪ— ћж ”Нж ‘«—Ќх ۽ ”дڌ ћн ¬ћБн ж«—н ё«...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_12.html" class="article-card" data-title="لڳي ڏکڻ جي هير ...!" data-year="2015" data-snippet="бڳн ڏшڻ ћн ен— ...! «ڱ«—ж 10 г«—н 2015џ ¬ѕс ћڏед гٺнѕу ۾ бнڪн—«— еж” е ”дڌ ћн —нр” «дн ќўн ћн д«гн«—н —«ڳн гжед ڀڳ ”«д ڪ«ён —е«ڻнжд ٿндѕнжд енжд. ед џўнг —«ڳнѕу ћж еڪ «еڙн ќ«дѕ«д ”..."><div class="card-header-row"><h2 class="card-title">لڳي ڏکڻ جي هير ...!</h2><span class="card-date">اڱارو 10 مارچ 2015ع</span></div><p class="card-snippet">бڳн ڏШڻ ћн ен— ...! «ڱ«—ж 10 г«—Н 2015Џ ¬Ѕс ћڏед гٺнЅу ۾ бнڪН—«— еж” е ”дڌ ћн —нР” «дн ќЎн ћн д«гн«—н —«ڳн гжед ڀڳ ”«д ڪ«Ён —е«ڻнжд ٿндѕнжд енжд. ед Џўнг —«ڳнЅу ћж еڪ «еڙн ќ«дѕ«д ”...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_4.html" class="article-card" data-title="تنهنجي نيڻن جا نشانا ياد پيا!" data-year="2015" data-snippet="дедћн днڻд ћ« д‘«д« н«ѕ бн«! «—»џ 05 ¬р”ٽ 2015џ ф «ћ! гж н б—ڪ«‘ »е жнж!угж»«∆нб н д«“ ”е н ћж ¬ж«“ еж. гжд шн д«“ ћн ж« «д енѕу »х—н ќ»— ٻхڌн гќ”ж” ٿнж е гдедћн гж»«∆нб ڄڻ е ڪдед ..."><div class="card-header-row"><h2 class="card-title">تنهنجي نيڻن جا نشانا ياد پيا!</h2><span class="card-date">اربع 05 آگسٽ 2015ع</span></div><p class="card-snippet">дедћн днڻд ћ« д‘«д« н«ѕ Бн«! «—»Џ 05 ¬Р”ٽ 2015Џ Ф «ћ! гж н Б—ڪ«‘ »е жнж!Угж»«∆нб н д«“ ”е н ћж ¬ж«“ еж. гжд Шн д«“ ћн ж« «д енЅу »х—н ќ»— ٻхڌн гЌ”ж” ٿнж е гдедћн гж»«∆нб ڄڻ е ڪдед ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_13.html" class="article-card" data-title="سنڌ جي دل هڪ ڀيرو ٻيهر بيهي رهي!" data-year="2014" data-snippet="”дڌ ћн ѕб еڪ ڀн—ж ٻне— »нен —ен! «—»џ 24 ڊ”г»— 2014џ ед ”н«—н ћн ڊ”г»— гендн ۾ ٻнж ڀн—ж ڪ«бее ’»ќ ћж ”дڌ ћн ѕб ڪћее ”нڪдڊд б«ѕц »нен —ен° ћڏед ”дڌ ћн б«ڏбн «ѕн» бڇгڻ ڪжгб° ѕебнѕу ћ..."><div class="card-header-row"><h2 class="card-title">سنڌ جي دل هڪ ڀيرو ٻيهر بيهي رهي!</h2><span class="card-date">اربع 24 ڊسمبر 2014ع</span></div><p class="card-snippet">”дڌ ћн ѕб еڪ ڀн—ж ٻне— »нен —ен! «—»Џ 24 ڊ”г»— 2014Џ ед ”н«—н ћн ڊ”г»— гендн ۾ ٻнж ڀн—ж ڪ«бее ’»Ќ ћж ”дڌ ћн ѕб ڪћее ”нڪдڊд б«Ѕц »нен —ен° ћڏед ”дڌ ћн б«ڏбн «ѕн» бڇгڻ ڪжгб° ѕебнЅу ћ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_15.html" class="article-card" data-title="وئي هوءَ اُڏري اڪيلي اڪيلي...!" data-year="2013" data-snippet="ж∆н ежѕу «хڏ—н «ڪнбн «ڪнбн...! ”жг— 16 ”нбٽг»— 2013џ гд е де ٿж гڃн° б— гжед гѕеж‘ нжн ٿж е шн” ббн « ёжд ڪ—н ннж ¬ен е° фггнѕу ћн гн“ н ”жнд ڪ«џ–° «ڌж—нжд ڪе«ڻнжд ۽ «ڌж—« рн ٽڙн« ..."><div class="card-header-row"><h2 class="card-title">وئي هوءَ اُڏري اڪيلي اڪيلي...!</h2><span class="card-date">سومر 16 سيپٽمبر 2013ع</span></div><p class="card-snippet">ж∆н ежЅу «хڏ—н «ڪнбн «ڪнбн...! ”жг— 16 ”нБٽг»— 2013Џ гд е де ٿж гڃн° Б— гжед гѕеж‘ Нжн ٿж е Шн” ббн « Ёжд ڪ—н Ннж ¬ен е° ФггнЅу ћн гн“ н ”жнд ڪ«џ–° «ڌж—нжд ڪе«ڻнжд ۽ «ڌж—« Рн ٽڙн« ...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_7.html" class="article-card" data-title="سڄڻ سونيءَ تند جئن!" data-year="2013" data-snippet="”ڄڻ ”жднѕу дѕ ћ∆д! «ڱ«—ж 09 ћжб«ѕц 2013џ ф «ћ! «ڄ «—нќ ћж еڪ ѕƒ— бж—ж ٿн жнж° «”«д ћн «ѕ»н ”«ٿ«—н ”дѕ—н « гндѕ«ڻн »е гжڪб«∆н ж∆н.у ен еж гж н б—ڪ«‘° ћнڪж ¬ѕнбж—° ڪڇ г«д гж»«∆нб ёжд..."><div class="card-header-row"><h2 class="card-title">سڄڻ سونيءَ تند جئن!</h2><span class="card-date">اڱارو 09 جولاءِ 2013ع</span></div><p class="card-snippet">”ڄڻ ”жднЅу дѕ ћ∆д! «ڱ«—ж 09 ћжб«Ѕц 2013Џ Ф «ћ! «ڄ «—нќ ћж еڪ ѕƒ— Бж—ж ٿн жнж° «”«д ћн «ѕ»н ”«ٿ«—н ”дѕ—н « гНдѕ«ڻн »е гжڪб«∆н ж∆н.У ен еж гж н Б—ڪ«‘° ћнڪж ¬ѕнБж—° ڪڇ г«д гж»«∆нб Ёжд...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_2.html" class="article-card" data-title="ٻوليءَ جي بگاڙ روڪڻ لاءِ تجويزون ۽ وضاحتون" data-year="2012" data-snippet="ٻжбнѕу ћн »р«ڙ —жڪڻ б«ѕц ћжн“жд ۽ ж÷«ќ жд ڇдڇ— 22 ڊ”г»— 2012џ —ж“«дн ڪ«ж‘ ћн 20 ڊ”г»— 2012џ ж«—н ‘г«—н ۾° гќ —ге ”ќ— рб ћж г÷гжд ф”дڌн ٻжбнѕу ћн жڌдѕڙ »р«ڙ ћж ѕ«—хڪ ڪн∆д ڪћнњу ћн џ..."><div class="card-header-row"><h2 class="card-title">ٻوليءَ جي بگاڙ روڪڻ لاءِ تجويزون ۽ وضاحتون</h2><span class="card-date">ڇنڇر 22 ڊسمبر 2012ع</span></div><p class="card-snippet">ٻжбнЅу ћн »Р«ڙ —жڪڻ б«Ѕц ћжн“жд ۽ ж÷«Ќ жд ڇдڇ— 22 ڊ”г»— 2012Џ —ж“«дн ڪ«ж‘ ћн 20 ڊ”г»— 2012Џ ж«—н ‘г«—н ۾° гЌ —ге ”Ќ— Рб ћж г÷гжд Ф”дڌн ٻжбнЅу ћн жڌдѕڙ »Р«ڙ ћж ѕ«—хڪ ڪн∆д ڪћнњУ ћн Џ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2012ع</span></div></a><a href="articles/art_10.html" class="article-card" data-title="مور، هرڻ ۽ ڪارونجهر جي ڪورَ بچايو!" data-year="2008" data-snippet="مور، هرڻ ۽ ڪارونجهر جي ڪورَ بچايو! سومر 29 سيپٽمبر 2008ع ڪجهه سال اڳ، ڪارونجهر جبل جي معدنيات هٿ ڪرڻ لاءِ ڪن ماڻهن کي سياسي بنياد تي ٺيڪا ڏنا ويا هئا، نتيجي طور ٺيڪيدار پٿرن جي زير..."><div class="card-header-row"><h2 class="card-title">مور، هرڻ ۽ ڪارونجهر جي ڪورَ بچايو!</h2><span class="card-date">سومر 29 سيپٽمبر 2008ع</span></div><p class="card-snippet">مور، هرڻ ۽ ڪارونجهر جي ڪورَ بچايو! سومر 29 سيپٽمبر 2008ع ڪجهه سال اڳ، ڪارونجهر جبل جي معدنيات هٿ ڪرڻ لاءِ ڪن ماڻهن کي سياسي بنياد تي ٺيڪا ڏنا ويا هئا، نتيجي طور ٺيڪيدار پٿرن جي زير...</p><div class="card-footer"><span>⏱️ 9 منٽ</span><span class="card-meta-tag">2008ع</span></div></a><a href="articles/art_5.html" class="article-card" data-title="قليچ بيگ: جديد سنڌي ادب جو اهم معمار" data-year="2008" data-snippet="قليچ بيگ: جديد سنڌي ادب جو اهم معمار جمع 4 جولاءِ 2008ع مرزا قليچ بيگ لاءِ ٻه رايا نٿا ٿي سگهن ته هو جديد سنڌي ادب جو معمار ۽ ابو هو ۽ انگريز دور ۾ سنڌي ٻوليءَ ۽ ادب جي آسمان جو سج..."><div class="card-header-row"><h2 class="card-title">قليچ بيگ: جديد سنڌي ادب جو اهم معمار</h2><span class="card-date">جمع 4 جولاءِ 2008ع</span></div><p class="card-snippet">قليچ بيگ: جديد سنڌي ادب جو اهم معمار جمع 4 جولاءِ 2008ع مرزا قليچ بيگ لاءِ ٻه رايا نٿا ٿي سگهن ته هو جديد سنڌي ادب جو معمار ۽ ابو هو ۽ انگريز دور ۾ سنڌي ٻوليءَ ۽ ادب جي آسمان جو سج...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2008ع</span></div></a><a href="articles/art_6.html" class="article-card" data-title="ناياب پکين جي نسل ڪشي" data-year="2008" data-snippet="ناياب پکين جي نسل ڪشي اڱارو 7 آڪٽوبر 2008ع سنڌ، صدين کان سک، امن، آرام ۽ آشتيءَ جي سرزمين رهي آهي. هتي جا ماڻهو تاريخ جي ڪنهن به دور ۾ پرمار ۽ لٽيرا نه رهيا آهن. اهو ئي ڪارڻ آهي، ج..."><div class="card-header-row"><h2 class="card-title">ناياب پکين جي نسل ڪشي</h2><span class="card-date">اڱارو 7 آڪٽوبر 2008ع</span></div><p class="card-snippet">ناياب پکين جي نسل ڪشي اڱارو 7 آڪٽوبر 2008ع سنڌ، صدين کان سک، امن، آرام ۽ آشتيءَ جي سرزمين رهي آهي. هتي جا ماڻهو تاريخ جي ڪنهن به دور ۾ پرمار ۽ لٽيرا نه رهيا آهن. اهو ئي ڪارڻ آهي، ج...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2008ع</span></div></a><a href="articles/art_8.html" class="article-card" data-title="هڪ لطيف شناس جي موڪلاڻي" data-year="2008" data-snippet="هڪ لطيف شناس جي موڪلاڻي اربع 30 جنوري 2008ع ”ادا تاج! ڏک ڀري خبر آهي ته ڊاڪٽر موتي لعل جوتواڻي، رات پوني ۾، پنهنجي پُٽ انيل جوتواڻيءَ جي گهر، دل جي دوري سبب ديهانت ڪري ويو آهي. سنڌ..."><div class="card-header-row"><h2 class="card-title">هڪ لطيف شناس جي موڪلاڻي</h2><span class="card-date">اربع 30 جنوري 2008ع</span></div><p class="card-snippet">هڪ لطيف شناس جي موڪلاڻي اربع 30 جنوري 2008ع ”ادا تاج! ڏک ڀري خبر آهي ته ڊاڪٽر موتي لعل جوتواڻي، رات پوني ۾، پنهنجي پُٽ انيل جوتواڻيءَ جي گهر، دل جي دوري سبب ديهانت ڪري ويو آهي. سنڌ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2008ع</span></div></a><a href="articles/art_9.html" class="article-card" data-title="اچو ته هريءَ جي خاڪ کي سلام ڪريون" data-year="2007" data-snippet="اچو ته هريءَ جي خاڪ کي سلام ڪريون خميس 5 جولاءِ 2007ع اڄ کان اڍائي سئو سال اڳي، شاهه عبداللطيف ڀٽائيءَ سنڌ جي حب الوطنيءَ جي عظيم ڪردار مارئيءَ جي عمر جي قيد ۾ قيدي هئڻ وقت دلي ڪيف..."><div class="card-header-row"><h2 class="card-title">اچو ته هريءَ جي خاڪ کي سلام ڪريون</h2><span class="card-date">خميس 5 جولاءِ 2007ع</span></div><p class="card-snippet">اچو ته هريءَ جي خاڪ کي سلام ڪريون خميس 5 جولاءِ 2007ع اڄ کان اڍائي سئو سال اڳي، شاهه عبداللطيف ڀٽائيءَ سنڌ جي حب الوطنيءَ جي عظيم ڪردار مارئيءَ جي عمر جي قيد ۾ قيدي هئڻ وقت دلي ڪيف...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2007ع</span></div></a><a href="articles/art_11.html" class="article-card" data-title="سنڌي ٻوليءَ سان دشمني وارو رويو ۽ تعليم کاتو!" data-year="2006" data-snippet="سنڌي ٻوليءَ سان دشمني وارو رويو ۽ تعليم کاتو! سومر 13 مارچ 2006ع سنڌي ٻولي گذريل ڪيترين صدين کان سنڌ جي سرڪاري ۽ تعليمي زبان رهي آهي، پوءِ سنڌ جي ڌار ملڪ واري حيثيت رهي هجي يا انگر..."><div class="card-header-row"><h2 class="card-title">سنڌي ٻوليءَ سان دشمني وارو رويو ۽ تعليم کاتو!</h2><span class="card-date">سومر 13 مارچ 2006ع</span></div><p class="card-snippet">سنڌي ٻوليءَ سان دشمني وارو رويو ۽ تعليم کاتو! سومر 13 مارچ 2006ع سنڌي ٻولي گذريل ڪيترين صدين کان سنڌ جي سرڪاري ۽ تعليمي زبان رهي آهي، پوءِ سنڌ جي ڌار ملڪ واري حيثيت رهي هجي يا انگر...</p><div class="card-footer"><span>⏱️ 10 منٽ</span><span class="card-meta-tag">2006ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>

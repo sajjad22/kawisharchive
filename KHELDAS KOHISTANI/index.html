@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کيلداس ڪوهستاني - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">KK</div>
+      <h1>کيلداس ڪوهستاني</h1>
+      <div class="author-english-sub">KHELDAS KOHISTANI</div>
+      <p>ڪُل <span id="visibleCount">12</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2020')">2020ع</button>
+<button class="filter-btn" onclick="filterYear('2018')">2018ع</button>
+<button class="filter-btn" onclick="filterYear('2017')">2017ع</button>
+<button class="filter-btn" onclick="filterYear('2016')">2016ع</button>
+<button class="filter-btn" onclick="filterYear('2014')">2014ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_5.html" class="article-card" data-title="ٿڌڙيءَ جو ڏڻ ۽ عالم لاءِ سڀ تمنائون!" data-year="2020" data-snippet="اڄ ٿڌڙي آھي، سمورن ڏيھ پرڏيھ ۾ رھندڙن کي شڀ واڌايون. مون اڄ پنھنجو ناشتو ھن شڀ ڏڻ جي حوالي سان ٺھندڙ روايتي کاڌن بدران ٿڌڙيءَ جي خاص کاڌن سان ڪيو. اسان جي ڪوھستان جي مائرن ڀينرن ۽ ..."><div class="card-header-row"><h2 class="card-title">ٿڌڙيءَ جو ڏڻ ۽ عالم لاءِ سڀ تمنائون!</h2><span class="card-date">ڇنڇر 28 اپريل 2018ع</span></div><p class="card-snippet">اڄ ٿڌڙي آھي، سمورن ڏيھ پرڏيھ ۾ رھندڙن کي شڀ واڌايون. مون اڄ پنھنجو ناشتو ھن شڀ ڏڻ جي حوالي سان ٺھندڙ روايتي کاڌن بدران ٿڌڙيءَ جي خاص کاڌن سان ڪيو. اسان جي ڪوھستان جي مائرن ڀينرن ۽ ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2020ع</span></div></a><a href="articles/art_2.html" class="article-card" data-title="ڇا ”ووٽ کي عزت“ نه ملڻ گهرجي؟" data-year="2018" data-snippet="مون سميت ملڪ جا لکين ڪروڙين ماڻهو اهو سوچڻ تي مجبور آهن ته 2013ع جي اليڪشن ۾ چونڊجي آيل مسلم ليگ (ن) جي وزيراعظم نواز شريف کي هن ملڪ جي عوام انهيءَ اميد سان منتخب ڪرايو هو ته هو مل..."><div class="card-header-row"><h2 class="card-title">ڇا ”ووٽ کي عزت“ نه ملڻ گهرجي؟</h2><span class="card-date">ڇنڇر 28 اپريل 2018ع</span></div><p class="card-snippet">مون سميت ملڪ جا لکين ڪروڙين ماڻهو اهو سوچڻ تي مجبور آهن ته 2013ع جي اليڪشن ۾ چونڊجي آيل مسلم ليگ (ن) جي وزيراعظم نواز شريف کي هن ملڪ جي عوام انهيءَ اميد سان منتخب ڪرايو هو ته هو مل...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2018ع</span></div></a><a href="articles/art_12.html" class="article-card" data-title="نئين سنڌ جو خواب ۽ نواز ليگ جو بيانئو" data-year="2018" data-snippet="مون سميت ملڪ جا لکين ڪروڙين ماڻهو اهو سوچڻ تي مجبور آهن ته 2013ع جي اليڪشن ۾ چونڊجي آيل مسلم ليگ (ن) جي وزيراعظم نواز شريف کي هن ملڪ جي عوام انهيءَ اميد سان منتخب ڪرايو هو ته هو مل..."><div class="card-header-row"><h2 class="card-title">نئين سنڌ جو خواب ۽ نواز ليگ جو بيانئو</h2><span class="card-date">آچر 13 مئي 2018ع</span></div><p class="card-snippet">مون سميت ملڪ جا لکين ڪروڙين ماڻهو اهو سوچڻ تي مجبور آهن ته 2013ع جي اليڪشن ۾ چونڊجي آيل مسلم ليگ (ن) جي وزيراعظم نواز شريف کي هن ملڪ جي عوام انهيءَ اميد سان منتخب ڪرايو هو ته هو مل...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2018ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="جمهوريت لاءِ وڙهندڙ قيادت کي ڀيٽا!" data-year="2017" data-snippet="ملڪ جي سڀ کان وڏي عدالت جي طرفان پنهنجي خلاف آيل فيصلي کانپوءِ سابق وزيراعظم نواز شريف سمورن دٻائن جي باوجود به لاهور تائين موٽر وي بجاءِ جي ٽي روڊ جو انتخاب ڪيو. چيو وڃي ٿو هن تي ..."><div class="card-header-row"><h2 class="card-title">جمهوريت لاءِ وڙهندڙ قيادت کي ڀيٽا!</h2><span class="card-date">سومر 25 ڊسمبر 2017ع</span></div><p class="card-snippet">ملڪ جي سڀ کان وڏي عدالت جي طرفان پنهنجي خلاف آيل فيصلي کانپوءِ سابق وزيراعظم نواز شريف سمورن دٻائن جي باوجود به لاهور تائين موٽر وي بجاءِ جي ٽي روڊ جو انتخاب ڪيو. چيو وڃي ٿو هن تي ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2017ع</span></div></a><a href="articles/art_11.html" class="article-card" data-title="نواز شريف کي مائنس ڪري سگهبو؟" data-year="2017" data-snippet="ملڪ جي سڀ کان وڏي عدالت جي طرفان پنهنجي خلاف آيل فيصلي کانپوءِ سابق وزيراعظم نواز شريف سمورن دٻائن جي باوجود به لاهور تائين موٽر وي بجاءِ جي ٽي روڊ جو انتخاب ڪيو. چيو وڃي ٿو هن تي ..."><div class="card-header-row"><h2 class="card-title">نواز شريف کي مائنس ڪري سگهبو؟</h2><span class="card-date">آچر 20 آگسٽ 2017ع</span></div><p class="card-snippet">ملڪ جي سڀ کان وڏي عدالت جي طرفان پنهنجي خلاف آيل فيصلي کانپوءِ سابق وزيراعظم نواز شريف سمورن دٻائن جي باوجود به لاهور تائين موٽر وي بجاءِ جي ٽي روڊ جو انتخاب ڪيو. چيو وڃي ٿو هن تي ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2017ع</span></div></a><a href="articles/art_10.html" class="article-card" data-title="پي ايس 59 تي ڪاميابي ڪيئن ٿي؟" data-year="2016" data-snippet="бн «н” 59 н ڪ«гн«»н ڪн∆д ٿнњ ћгџ 25 г«—н 2016џ »ѕнд ћн ржб«ڙнн ٽдڊж џб«г ќнѕ— н г‘ гб бн «н” 59 ڪ ћн ÷гдн «бнڪ‘д ۾ г”бг бнр д ”дڌ ћн ’ѕ— гќгѕ «”г«џнб —«еж° б б «гнѕж«— дж«“ н«дڊнн ..."><div class="card-header-row"><h2 class="card-title">پي ايس 59 تي ڪاميابي ڪيئن ٿي؟</h2><span class="card-date">جمع 25 مارچ 2016ع</span></div><p class="card-snippet">Бн «н” 59 н ڪ«гн«»н ڪн∆д ٿнњ ћгЏ 25 г«—Н 2016Џ »ѕнд ћн Ржб«ڙНн ٽдڊж џб«г Ќнѕ— н г‘ гб Бн «н” 59 ڪ ћн ÷гдн «бнڪ‘д ۾ г”бг бнР д ”дڌ ћн ’ѕ— гЌгѕ «”г«Џнб —«еж° Б Б «гнѕж«— дж«“ Н«дڊнн ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_7.html" class="article-card" data-title="احتجاجن واري ”سياست“ سان مُولڪ جو ڪهڙو ڀَلو ٿيندو؟!" data-year="2016" data-snippet="«ќ ћ«ћд ж«—н ф”н«” у ”«д гхжбڪ ћж ڪеڙж ڀубж ٿндѕжњ! «ڱ«—ж 12 «б—нб 2016џ ћڏед ш«д б«д«г« бнڪ” ћ« «дڪ‘«ё ”«гежд ¬н« ¬ед° ڏед ш«д б«ڪ” «д ћн «бж“н‘д б«—ٽнд° ќ’ж’«р ќ—нڪц «д’«ё ќڪжг ќ..."><div class="card-header-row"><h2 class="card-title">احتجاجن واري ”سياست“ سان مُولڪ جو ڪهڙو ڀَلو ٿيندو؟!</h2><span class="card-date">اڱارو 12 اپريل 2016ع</span></div><p class="card-snippet">«Ќ ћ«ћд ж«—н Ф”н«” У ”«д гхжбڪ ћж ڪеڙж ڀубж ٿндѕжњ! «ڱ«—ж 12 «Б—нб 2016Џ ћڏед Ш«д Б«д«г« бнڪ” ћ« «дڪ‘«Ё ”«гежд ¬н« ¬ед° ڏед Ш«д Б«ڪ” «д ћн «Бж“н‘д Б«—ٽнд° ќ’ж’«р Ќ—нڪц «д’«Ё Ќڪжг ќ...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_8.html" class="article-card" data-title="پيپلز پارٽيءَ جو پنهنجا نوازي وارو ڪلچر ۽ نوازليگ" data-year="2016" data-snippet="бнбб“ б«—ٽнѕу ћж бдедћ« дж«“н ж«—ж ڪбн— ۽ дж«“бнр «—»џ 11г∆н 2016џ ќڪжг гќ«бё б«—ٽнжд гбڪ ۾ ”н«”н «д ‘«— ڦеб«∆н° ж“н— «џўг ۽ «д ћн ќ«дѕ«д ќб«ё »н »дн«ѕ б—жб∆рдڊ« ڪд бнжд° ћнڪ« гжћж..."><div class="card-header-row"><h2 class="card-title">پيپلز پارٽيءَ جو پنهنجا نوازي وارو ڪلچر ۽ نوازليگ</h2><span class="card-date">اربع 11مئي 2016ع</span></div><p class="card-snippet">БнБб“ Б«—ٽнЅу ћж Бдедћ« дж«“н ж«—ж ڪбН— ۽ дж«“бнР «—»Џ 11г∆н 2016Џ Ќڪжг гќ«бЁ Б«—ٽнжд гбڪ ۾ ”н«”н «д ‘«— ڦеб«∆н° ж“н— «Џўг ۽ «д ћн ќ«дѕ«д ќб«Ё »н »дн«ѕ Б—жБ∆Рдڊ« ڪд Бнжд° ћнڪ« гжћж...</p><div class="card-footer"><span>⏱️ 4 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_4.html" class="article-card" data-title="قائد اعظم، نواز شريف ۽ جديد جمهوريت!" data-year="2016" data-snippet="бнбб“ б«—ٽнѕу ћж бдедћ« дж«“н ж«—ж ڪбн— ۽ дж«“бнр «—»џ 11г∆н 2016џ ќڪжг гќ«бё б«—ٽнжд гбڪ ۾ ”н«”н «д ‘«— ڦеб«∆н° ж“н— «џўг ۽ «д ћн ќ«дѕ«д ќб«ё »н »дн«ѕ б—жб∆рдڊ« ڪд бнжд° ћнڪ« гжћж..."><div class="card-header-row"><h2 class="card-title">قائد اعظم، نواز شريف ۽ جديد جمهوريت!</h2><span class="card-date">آچر 25 ڊسمبر 2016ع</span></div><p class="card-snippet">БнБб“ Б«—ٽнЅу ћж Бдедћ« дж«“н ж«—ж ڪбН— ۽ дж«“бнР «—»Џ 11г∆н 2016Џ Ќڪжг гќ«бЁ Б«—ٽнжд гбڪ ۾ ”н«”н «д ‘«— ڦеб«∆н° ж“н— «Џўг ۽ «д ћн ќ«дѕ«д ќб«Ё »н »дн«ѕ Б—жБ∆Рдڊ« ڪд Бнжд° ћнڪ« гжћж...</p><div class="card-footer"><span>⏱️ 4 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_6.html" class="article-card" data-title="وزير اعظم يوٿ لون اسڪيم ۽ بيروزگاريءَ جو خاتمو" data-year="2014" data-snippet="ж“н— «џўг нжٿ бжд «”ڪнг ۽ »н—ж“р«—нѕу ћж ќ« гж «ڱ«—ж 17 ڊ”г»— 2013џ ж“н—«џўг гќгѕ дж«“ ‘—нё бдедћн «бнڪ‘дн гег ћн ћڏед г«д”е—е г«д ‘—жџ« еڪ ћб”н ”«д ڪ∆н е∆н° «д жё бе—нд ћб”н ۾ ‘—н..."><div class="card-header-row"><h2 class="card-title">وزير اعظم يوٿ لون اسڪيم ۽ بيروزگاريءَ جو خاتمو</h2><span class="card-date">اڱارو 17 ڊسمبر 2013ع</span></div><p class="card-snippet">ж“н— «Џўг нжٿ бжд «”ڪнг ۽ »н—ж“Р«—нЅу ћж ќ« гж «ڱ«—ж 17 ڊ”г»— 2013Џ ж“н—«Џўг гЌгѕ дж«“ ‘—нЁ Бдедћн «бнڪ‘дн гег ћн ћڏед г«д”е—е г«д ‘—жЏ« еڪ ћб”н ”«д ڪ∆н е∆н° «д жё Бе—нд ћб”н ۾ ‘—н...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_9.html" class="article-card" data-title="سنڌ حڪومت کي امن امان ڏانهن ڌيان ڏيڻو پوندو" data-year="2014" data-snippet="”дڌ ќڪжг шн «гд «г«д ڏ«дед ڌн«д ڏнڻж бждѕж ¬н— 10 джг»— 2013џ «бнڪ‘д ш«д «ڳ гбڪ ћн «гд «г«д ћн г”∆бн шн дж«“ бнр ёжڪ” ڪ—н нждڊ гег »е — «дѕ«“ ”«д еб«∆н е∆н ۽ «д н∆бндћ шн ”«гежд —ш..."><div class="card-header-row"><h2 class="card-title">سنڌ حڪومت کي امن امان ڏانهن ڌيان ڏيڻو پوندو</h2><span class="card-date">آچر 10 نومبر 2013ع</span></div><p class="card-snippet">”дڌ Ќڪжг Шн «гд «г«д ڏ«дед ڌн«д ڏнڻж Бждѕж ¬Н— 10 джг»— 2013Џ «бнڪ‘д Ш«д «ڳ гбڪ ћн «гд «г«д ћн г”∆бн Шн дж«“ бнР Ёжڪ” ڪ—н Нждڊ гег »е — «дѕ«“ ”«д еб«∆н е∆н ۽ «д Н∆бндћ Шн ”«гежд —Ш...</p><div class="card-footer"><span>⏱️ 4 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="وزير اعظم جي ڪراچي ياترا ۽ نتيجن جي اميد" data-year="2014" data-snippet="ж“н— «џўг ћн ڪ—«нн н« —« ۽ д нћд ћн «гнѕ ¬н— 08 ”нбٽг»— 2013џ ежд∆д е ”гж—н ”дڌ ڪн —д ∆н ”«бд ш«д »ѕ«гднѕу ћн »«ее ۾ жڪжڙнб ¬ен° б— ќ’ж’«р ”дڌ ћн —«ڄڌ«дн ћн ‘е— ڪ—«ннѕу ۾ ћнڪ« ѕе‘ ..."><div class="card-header-row"><h2 class="card-title">وزير اعظم جي ڪراچي ياترا ۽ نتيجن جي اميد</h2><span class="card-date">آچر 08 سيپٽمبر 2013ع</span></div><p class="card-snippet">ж“н— «Џўг ћн ڪ—«Нн н« —« ۽ д нћд ћн «гнѕ ¬Н— 08 ”нБٽг»— 2013Џ ежд∆д е ”гж—н ”дڌ ڪн —д ∆н ”«бд Ш«д »ѕ«гднЅу ћн »«ее ۾ жڪжڙнб ¬ен° Б— ќ’ж’«р ”дڌ ћн —«ڄڌ«дн ћн ‘е— ڪ—«НнЅу ۾ ћнڪ« ѕе‘ ...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2014ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>

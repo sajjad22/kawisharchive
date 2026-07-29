@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ستار سروهي - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">SS</div>
+      <h1>ستار سروهي</h1>
+      <div class="author-english-sub">SATTAR SAROHI</div>
+      <p>ڪُل <span id="visibleCount">20</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2016')">2016ع</button>
+<button class="filter-btn" onclick="filterYear('2015')">2015ع</button>
+<button class="filter-btn" onclick="filterYear('2014')">2014ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_5.html" class="article-card" data-title="ايراني اليڪشن ۾ روهاني جي فتح ملڪ ڪي اڪيلائيءَ مان ڪڍڻ ڏانهن پيش قدمي!" data-year="2016" data-snippet="«н—«дн «бнڪ‘д ۾ —же«дн ћн ё ќ гбڪ ڪн «ڪнб«∆нѕу г«д ڪڍڻ ڏ«дед бн‘ ёѕгн! ”жг— 29 ён»—ж—н 2016џ «н—«д ў—ё«д ¬г—нڪ« ”«д «—нќн «∆ٽгн гџ«еѕн ш«д бжѕц бе—нжд ڀн—ж «н—«д ۾ 290 ”нٽд ж«—н б«..."><div class="card-header-row"><h2 class="card-title">ايراني اليڪشن ۾ روهاني جي فتح ملڪ ڪي اڪيلائيءَ مان ڪڍڻ ڏانهن پيش قدمي!</h2><span class="card-date">سومر 29 فيبروري 2016ع</span></div><p class="card-snippet">«н—«дн «бнڪ‘д ۾ —же«дн ћн Ё Ќ гбڪ ڪн «ڪнб«∆нЅу г«д ڪڍڻ ڏ«дед Бн‘ ёѕгн! ”жг— 29 Ён»—ж—н 2016Џ «н—«д Ў—Ё«д ¬г—нڪ« ”«д «—нќн «∆ٽгн гЏ«еѕн Ш«д БжЅц Бе—нжд ڀн—ж «н—«д ۾ 290 ”нٽд ж«—н Б«...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_15.html" class="article-card" data-title="پاڪ-انڊيا جو فلمي ڪهاڻين جهڙو ”پيار“" data-year="2016" data-snippet="б«ڪ«дڊн« ћж ёбгн ڪе«ڻнд ћеڙж фбн«—у ќгн” 21 «б—нб 2016џ џ«г ўж— н џ‘ё ћж ќё ∆н ќў—д«ڪ еждѕж ¬ен° ڀ«— ћн «х —нд ‘е— —«гбж— ћн джћж«д гќгѕ ћ«жнѕ ћн жег ۽ рг«д ۾ ∆н де еж е б«ڪ” «д ۾ ..."><div class="card-header-row"><h2 class="card-title">پاڪ-انڊيا جو فلمي ڪهاڻين جهڙو ”پيار“</h2><span class="card-date">خميس 21 اپريل 2016ع</span></div><p class="card-snippet">Б«ڪ«дڊн« ћж Ёбгн ڪе«ڻнд ћеڙж ФБн«—У ќгн” 21 «Б—нб 2016Џ Џ«г Ўж— н Џ‘ё ћж ќЁ ∆н ќЎ—д«ڪ еждѕж ¬ен° ڀ«— ћн «х —нд ‘е— —«гБж— ћн джћж«д гЌгѕ ћ«жнѕ ћн жег ۽ Рг«д ۾ ∆н де еж е Б«ڪ” «д ۾ ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_8.html" class="article-card" data-title="اڌ ۾ رهيل اسڪرپٽ هاڻي عمل ٿيندو؟" data-year="2016" data-snippet="«ڌ ۾ —енб «”ڪ—бٽ е«ڻн џгб ٿндѕжњ «—»џ 13 «б—нб 2016џ «”б«г ¬»«ѕ ۽ бдڊнѕу ћн ё÷«∆д ۾ еڪ ڀн—ж ٻне— џћн» ж џ—н» ”—рж‘нжд ۽ ”—ٻ«ٽ ٻڌڻ ۾ «нн —ен« ¬ед.. ڊн нжڪ ћн ”н«” ж—н нжٽ нڙеڻ бڳн ¬..."><div class="card-header-row"><h2 class="card-title">اڌ ۾ رهيل اسڪرپٽ هاڻي عمل ٿيندو؟</h2><span class="card-date">اربع 13 اپريل 2016ع</span></div><p class="card-snippet">«ڌ ۾ —енб «”ڪ—Бٽ е«ڻн Џгб ٿндѕжњ «—»Џ 13 «Б—нб 2016Џ «”б«г ¬»«ѕ ۽ БдڊнЅу ћн Ё÷«∆д ۾ еڪ ڀн—ж ٻне— Џћн» ж џ—н» ”—Рж‘нжд ۽ ”—ٻ«ٽ ٻڌڻ ۾ «Нн —ен« ¬ед.. ڊн Нжڪ ћн ”н«” ж—н Нжٽ Нڙеڻ бڳн ¬...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_12.html" class="article-card" data-title="دنيا کي لوڏي ڇڏيندڙ پاناما ليڪس جو پاڪستاني سياست تي پوندڙ اٿر" data-year="2016" data-snippet="ѕдн« шн бжڏн ڇڏндѕڙ б«д«г« бнڪ” ћж б«ڪ” «дн ”н«” н бждѕڙ «ٿ— «—»џ 06 «б—нб 2016џ ѕдн« ћ« ў«ё ж— —нд ќڪг—«д° ”н«” ѕ«д° ڪ«гж—« ۽ ж«б«—н ڪн∆д де ў«ё ћн ڏڍ н ѕжб ڪг«∆н ж—н бڪ«∆нд ٿ«° ڪ..."><div class="card-header-row"><h2 class="card-title">دنيا کي لوڏي ڇڏيندڙ پاناما ليڪس جو پاڪستاني سياست تي پوندڙ اٿر</h2><span class="card-date">اربع 06 اپريل 2016ع</span></div><p class="card-snippet">ѕдн« Шн бжڏн ڇڏндѕڙ Б«д«г« бнڪ” ћж Б«ڪ” «дн ”н«” н Бждѕڙ «ٿ— «—»Џ 06 «Б—нб 2016Џ ѕдн« ћ« Ў«ё ж— —нд Ќڪг—«д° ”н«” ѕ«д° ڪ«гж—« ۽ ж«Б«—н ڪн∆д де Ў«ё ћн ڏڍ н ѕжб ڪг«∆н ж—н бڪ«∆нд ٿ«° ڪ...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="امان مري وئي...سڀ ڪجهه ختم ٿي ويو!!" data-year="2016" data-snippet="«г«д г—н ж∆н...”ڀ ڪћее ќ г ٿн жнж!! ¬н— 22 г∆н 2016џ ф«г«д г—н ж∆н ۽ «еڙн —н ”ڀ ڪћее ќ г ٿн жнжу....—жќ ћн б« «б ۾ жڃн ѕ—ѕ ۽ н нгн ћж «ќ”«” ћ«ڳ«∆ндѕڙ енѕх ћгбж «д г’—н ٻ«— ћж бшнб ..."><div class="card-header-row"><h2 class="card-title">امان مري وئي...سڀ ڪجهه ختم ٿي ويو!!</h2><span class="card-date">آچر 22 مئي 2016ع</span></div><p class="card-snippet">«г«д г—н ж∆н...”ڀ ڪћее ќ г ٿн жнж!! ¬Н— 22 г∆н 2016Џ Ф«г«д г—н ж∆н ۽ «еڙн —н ”ڀ ڪћее ќ г ٿн жнжУ....—жЌ ћн Б« «б ۾ жڃн ѕ—ѕ ۽ н нгн ћж «Ќ”«” ћ«ڳ«∆ндѕڙ енЅх ћгбж «д г’—н ٻ«— ћж бШнб ...</p><div class="card-footer"><span>⏱️ 4 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_13.html" class="article-card" data-title="شاهه عبدالڪريم بلڙي واري جو پيغام ۽ فلسفو" data-year="2015" data-snippet="‘«ее џ»ѕ«бڪ—нг »бڙн ж«—н ћж бнџ«г ۽ ёб”ёж ڇдڇ— 22 ¬р”ٽ 2015џ ”дڌн «ѕ» ћж же«∆ж «—ж ‘«ее џ»ѕ«бڪ—нг »бڙн ж«—ж 1536џ ۾ бнѕ« ٿнж° ”дѕ” жڏ« «’б е—« ћ« —еж«”н е∆«° ћнڪн ећ— ڪ—н гٽн«—н бе..."><div class="card-header-row"><h2 class="card-title">شاهه عبدالڪريم بلڙي واري جو پيغام ۽ فلسفو</h2><span class="card-date">ڇنڇر 22 آگسٽ 2015ع</span></div><p class="card-snippet">‘«ее Џ»ѕ«бڪ—нг »бڙн ж«—н ћж Бнџ«г ۽ Ёб”Ёж ڇдڇ— 22 ¬Р”ٽ 2015Џ ”дڌн «ѕ» ћж же«∆ж «—ж ‘«ее Џ»ѕ«бڪ—нг »бڙн ж«—ж 1536Џ ۾ Бнѕ« ٿнж° ”дѕ” жڏ« «’б е—« ћ« —еж«”н е∆«° ћнڪн ећ— ڪ—н гٽн«—н Бе...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_19.html" class="article-card" data-title="نواز-مودي ملاقات ٽياس تي ٽنگيل امن" data-year="2015" data-snippet="дж«“гжѕн гб«ё« ٽн«” н ٽдрнб «гд ڇдڇ— 11 ћжб«ѕц 2015џ —ж” ћн ‘е— «жё« ۾ ‘дре«∆н ”еڪ«—н ڪ«дё—д” ћн гжёџн н ћеڙн —н ж“н—«џўг дж«“ ‘—нё ۽ ڀ«— н ж“н—«џўг д—ндѕ— гжѕн жн ۾ гб«ё« џн— г жё..."><div class="card-header-row"><h2 class="card-title">نواز-مودي ملاقات ٽياس تي ٽنگيل امن</h2><span class="card-date">ڇنڇر 11 جولاءِ 2015ع</span></div><p class="card-snippet">дж«“гжѕн гб«ё« ٽн«” н ٽдРнб «гд ڇдڇ— 11 ћжб«Ѕц 2015Џ —ж” ћн ‘е— «жЁ« ۾ ‘дРе«∆н ”еڪ«—н ڪ«дЁ—д” ћн гжёЏн н ћеڙн —н ж“н—«Џўг дж«“ ‘—нЁ ۽ ڀ«— н ж“н—«Џўг д—ндѕ— гжѕн жН ۾ гб«ё« џн— г жё...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_18.html" class="article-card" data-title="سياسي ويساهه گهاتين ۾ گهيريل سنڌ جي عيد" data-year="2015" data-snippet="”н«”н жн”«ее ре« нд ۾ рен—нб ”дڌ ћн џнѕ ћгџ 25 ”нбٽг»— 2015џ ћڏед «”нд »ѕнбн ћн ڳ«бее ڪ—нжд ٿ« е «д г«д г—«ѕ ¬ен е «ڄ ћнڪж ڪћее ٿн —енж ¬ен° «еж ѕ—” д«ен° ۽ «ڄ ћн ћгжѕ ”»» ћнڪж ”ڀ«..."><div class="card-header-row"><h2 class="card-title">سياسي ويساهه گهاتين ۾ گهيريل سنڌ جي عيد</h2><span class="card-date">جمع 25 سيپٽمبر 2015ع</span></div><p class="card-snippet">”н«”н жн”«ее Ре« нд ۾ Рен—нб ”дڌ ћн Џнѕ ћгЏ 25 ”нБٽг»— 2015Џ ћڏед «”нд »ѕнбн ћн ڳ«бее ڪ—нжд ٿ« е «д г«д г—«ѕ ¬ен е «ڄ ћнڪж ڪћее ٿн —енж ¬ен° «еж ѕ—” д«ен° ۽ «ڄ ћн ћгжѕ ”»» ћнڪж ”ڀ«...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_20.html" class="article-card" data-title="سنڌ جي غربت جا گهاءُ ڪير ڀريندو..؟!" data-year="2015" data-snippet="”дڌ ћн џ—» ћ« ре«ѕх ڪн— ڀ—ндѕж..њ! «—»џ 10 ћжд 2015џ ѕб нжн ٿн е ѕб шжбн бшћн..«еڙж бшћн ћж ÷гн— ћдћежڙн ڇڏћд° нхб ћж —ж“ж ٽжڙн «еڙнжд е —ڙнжд ڪћд ћж ¬”г«д ∆н ڏуڪн жڃд° ѕбнжд ѕуебћ..."><div class="card-header-row"><h2 class="card-title">سنڌ جي غربت جا گهاءُ ڪير ڀريندو..؟!</h2><span class="card-date">اربع 10 جون 2015ع</span></div><p class="card-snippet">”дڌ ћн џ—» ћ« Ре«Ѕх ڪн— ڀ—ндѕж..њ! «—»Џ 10 ћжд 2015Џ ѕб Нжн ٿн е ѕб Шжбн бШћн..«еڙж бШћн ћж ÷гн— ћдћежڙн ڇڏћд° НхБ ћж —ж“ж ٽжڙн «еڙнжд е —ڙнжд ڪћд ћж ¬”г«д ∆н ڏуڪн жڃд° ѕбнжд ѕуебћ...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_14.html" class="article-card" data-title="راجوءَ جو درد....!!" data-year="2015" data-snippet="—«ћжѕу ћж ѕ—ѕ....!! ¬н—04 ћдж—н 2015џ ѕдн« ۾ г«ڻеж ڪٿн »е ебнж жڃн° шн” «д”«дн ћ–»д ћж ”«ڳнж ∆н ће«д гбн бждѕж..ڪڏед ڪڏед ڪн ѕ—ѕ џхг— ڳ«—нж ڇڏнд е ڪн ѕ—ѕ ж—н ш«—нж ڇڏнд... ڏед “дѕр..."><div class="card-header-row"><h2 class="card-title">راجوءَ جو درد....!!</h2><span class="card-date">آچر04 جنوري 2015ع</span></div><p class="card-snippet">—«ћжЅу ћж ѕ—ѕ....!! ¬Н—04 ћдж—н 2015Џ ѕдн« ۾ г«ڻеж ڪٿн »е ебнж жڃн° Шн” «д”«дн ћ–»д ћж ”«ڳнж ∆н ће«д гбн Бждѕж..ڪڏед ڪڏед ڪн ѕ—ѕ Џхг— ڳ«—нж ڇڏнд е ڪн ѕ—ѕ ж—н Ш«—нж ڇڏнд... ڏед “дѕР...</p><div class="card-footer"><span>⏱️ 5 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_16.html" class="article-card" data-title="ڀارتي پاليسين سبب داءَ تي لڳل ننڍي کنڊ جو امن!" data-year="2015" data-snippet="ڀ«— н б«бн”нд ”»» ѕ«ѕу н бڳб ддڍн шдڊ ћж «гд! ¬н— 23 ¬р”ٽ 2015џ ڀ«— н ж“н—«џўг д—ндѕ— гжѕн ћн «д«∆д ۽ еٺ ڌ—гнд ”»» днٺ еڪ ڀн—ж ٻне— б«ڪڀ«— ڳ«бенжд гб жн ٿн жнжд ¬ед ۽ «еڙн —н —ж” ћ..."><div class="card-header-row"><h2 class="card-title">ڀارتي پاليسين سبب داءَ تي لڳل ننڍي کنڊ جو امن!</h2><span class="card-date">آچر 23 آگسٽ 2015ع</span></div><p class="card-snippet">ڀ«— н Б«бн”нд ”»» ѕ«Ѕу н бڳб ддڍн Шдڊ ћж «гд! ¬Н— 23 ¬Р”ٽ 2015Џ ڀ«— н ж“н—«Џўг д—ндѕ— гжѕн ћн «д«∆д ۽ еٺ ڌ—гнд ”»» днٺ еڪ ڀн—ж ٻне— Б«ڪڀ«— ڳ«бенжд гб жн ٿн жнжд ¬ед ۽ «еڙн —н —ж” ћ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_4.html" class="article-card" data-title="عشق ۾ انتها ڪري ڇڏي!" data-year="2015" data-snippet="џ‘ё ۾ «д е« ڪ—н ڇڏн! ¬н— 22 джг»— 2015џ «’жбд ж«—н ”н«” ћж «еж ф«гнду ۽ гќ —ге »ндўн— ڀٽж ћж «д е«∆н «џ г«ѕ ћжڳж ”«ٿн гќѕжг «гнд ёенг е«ڻн «”«д ۾ д«ен —енж...«е« ќ»— ڇдڇ— ж«—н ڏнде..."><div class="card-header-row"><h2 class="card-title">عشق ۾ انتها ڪري ڇڏي!</h2><span class="card-date">آچر 22 نومبر 2015ع</span></div><p class="card-snippet">Џ‘ё ۾ «д е« ڪ—н ڇڏн! ¬Н— 22 джг»— 2015Џ «’жбд ж«—н ”н«” ћж «еж Ф«гндУ ۽ гЌ —ге »ндўн— ڀٽж ћж «д е«∆н «Џ г«ѕ ћжڳж ”«ٿн гќѕжг «гнд Ёенг е«ڻн «”«д ۾ д«ен —енж...«е« ќ»— ڇдڇ— ж«—н ڏнде...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2015ع</span></div></a><a href="articles/art_10.html" class="article-card" data-title="مدر ڊپلوميسي ....!!" data-year="2014" data-snippet="гѕ— ڊббжгн”н ....!! ڇдڇ— 14 ћжд 2014џ ецд б«— ш«д ехд б«— ћнڪж б—нг б — бхڳж ° «д ۾ бшнб еж е ф«нж е рڏћн д∆нд ѕж— ћн ‘—жџ« ڪ—нжд ۽ ед ќўн ћн џ—н» џж«г ћж гёѕ— «”«д ћн гџ«‘н гд“б ”..."><div class="card-header-row"><h2 class="card-title">مدر ڊپلوميسي ....!!</h2><span class="card-date">ڇنڇر 14 جون 2014ع</span></div><p class="card-snippet">гѕ— ڊБбжгн”н ....!! ڇдڇ— 14 ћжд 2014Џ ецд Б«— Ш«д ехд Б«— ћнڪж Б—нг Б — Бхڳж ° «д ۾ бШнб еж е Ф«Нж е Рڏћн д∆нд ѕж— ћн ‘—жЏ« ڪ—нжд ۽ ед ќЎн ћн џ—н» Џж«г ћж гёѕ— «”«д ћн гЏ«‘н гд“б ”...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="ڌرڻن جي سياست ۽ نواز سرڪار" data-year="2014" data-snippet="ڌ—ڻд ћн ”н«” ۽ дж«“ ”—ڪ«— ”жг— 18 ¬р”ٽ 2014џ р«ѕн ж«—н ‘е— ۾ ћнڪн гдў— р–—нб н∆д ڏндед ۾ бдћ«»н ۽ бќ жд ёбнж— ћн ед «джшн «дёб«» ۾ ڏ”ڻ б«ѕц гбн« ¬ед° «ен «ڳ »ќ—ќ«б ед гбڪ ۾ де ڏٺ« ..."><div class="card-header-row"><h2 class="card-title">ڌرڻن جي سياست ۽ نواز سرڪار</h2><span class="card-date">سومر 18 آگسٽ 2014ع</span></div><p class="card-snippet">ڌ—ڻд ћн ”н«” ۽ дж«“ ”—ڪ«— ”жг— 18 ¬Р”ٽ 2014Џ Р«ѕн ж«—н ‘е— ۾ ћнڪн гдў— Р–—нб Н∆д ڏндед ۾ Бдћ«»н ۽ Бќ жд Ёбнж— ћн ед «джШн «дёб«» ۾ ڏ”ڻ б«Ѕц гбн« ¬ед° «ен «ڳ »Ќ—Ќ«б ед гбڪ ۾ де ڏٺ« ...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_7.html" class="article-card" data-title="اچو ته هن ’’مجرماڻي اعتراف‘‘ تي ماتم ڪريون!!" data-year="2014" data-snippet="«нж е ед ттгћ—г«ڻн «џ —«ёсс н г« г ڪ—нжд!! ”жг— 10 г«—н 2014џ ”жд ж—дн ٿ— ћн “гнд° ћдед б«ѕц ڪћее генд« «ڳ ∆н ћڏед ж“н—«џўг дж«“ ‘—нё шн ٿ—ڪжб б—«ћнڪٽ ћн «ё «ќ жё ¬дѕж жнж еж ۽ ћڏе..."><div class="card-header-row"><h2 class="card-title">اچو ته هن ’’مجرماڻي اعتراف‘‘ تي ماتم ڪريون!!</h2><span class="card-date">سومر 10 مارچ 2014ع</span></div><p class="card-snippet">«Нж е ед ТТгћ—г«ڻн «Џ —«ЁСС н г« г ڪ—нжд!! ”жг— 10 г«—Н 2014Џ ”жд ж—дн ٿ— ћн “гнд° ћдед б«Ѕц ڪћее генд« «ڳ ∆н ћڏед ж“н—«Џўг дж«“ ‘—нЁ Шн ٿ—ڪжб Б—«ћнڪٽ ћн «Ё «Ќ жё ¬дѕж жнж еж ۽ ћڏе...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_6.html" class="article-card" data-title="اچو ته ايڪتا ۾ پوئجون!" data-year="2014" data-snippet="«нж е «нڪ « ۾ бж∆ћжд! ќгн” 20 джг»— 2014џ «еж ”дڌ ћн «ћ г«џн ‘џж— ћн »нгћ«б ”рее ∆н ¬ен ћж ’ѕнжд р–—н жнжд ¬ед° ”дڌнд ћж ёжгн ‘«џ— ڀٽ«∆н ∆н ¬ен° ћдед ћн бнџ«г ћж ∆н гќ» ° «гд ° ڀ«∆..."><div class="card-header-row"><h2 class="card-title">اچو ته ايڪتا ۾ پوئجون!</h2><span class="card-date">خميس 20 نومبر 2014ع</span></div><p class="card-snippet">«Нж е «нڪ « ۾ Бж∆ћжд! ќгн” 20 джг»— 2014Џ «еж ”дڌ ћн «ћ г«Џн ‘Џж— ћн »нгЋ«б ”Рее ∆н ¬ен ћж ’ѕнжд Р–—н жнжд ¬ед° ”дڌнд ћж ёжгн ‘«Џ— ڀٽ«∆н ∆н ¬ен° ћдед ћн Бнџ«г ћж ∆н гЌ» ° «гд ° ڀ«∆...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_17.html" class="article-card" data-title="سارڪ سربراهي ڪانفرنس ۽ پاڪ-ڀارت ڇڪتاڻ" data-year="2014" data-snippet="”«—ڪ ”—»—«ен ڪ«дё—д” ۽ б«ڪڀ«— ڇڪ «ڻ ћгџ 28 джг»— 2014џ ед ڀн—н ”«—ڪ ڪ«дё—д” ٺнڪ «д жё ٿн ¬ен° ћڏед ќўн ћн ٻд —ж«н н ќ—нё «∆ٽгн ў«ё д б«ڪ” «д ۽ ڀ«— жн ۾ ”—ќѕн ڇڪ «ڻ џ—жћ н бе б ¬ен°..."><div class="card-header-row"><h2 class="card-title">سارڪ سربراهي ڪانفرنس ۽ پاڪ-ڀارت ڇڪتاڻ</h2><span class="card-date">جمع 28 نومبر 2014ع</span></div><p class="card-snippet">”«—ڪ ”—»—«ен ڪ«дЁ—д” ۽ Б«ڪڀ«— ڇڪ «ڻ ћгЏ 28 джг»— 2014Џ ед ڀн—н ”«—ڪ ڪ«дЁ—д” ٺнڪ «д жё ٿн ¬ен° ћڏед ќЎн ћн ٻд —ж«н н Ќ—нЁ «∆ٽгн Ў«ё д Б«ڪ” «д ۽ ڀ«— жН ۾ ”—Ќѕн ڇڪ «ڻ Џ—жћ н Бе б ¬ен°...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_2.html" class="article-card" data-title="محبتن جو عالمي ڏينهن ۽ سنڌ" data-year="2014" data-snippet="гќ» д ћж џ«бгн ڏндед ۽ ”дڌ ћгџ 14 ён»—ж—н 2014џ џ‘ё »е еڪ џћн» «ќ”«” ћж д«дѕх ¬ен° ржн«° ڪ«∆д« ћж ”ڀ —др ед џ‘ё ۾ ∆н ”г«нб ¬ен° «д”«д ћжд ѕ«ќбн ۽ ќ«—ћн ڪнён жд° «ќ”«”д ћж «ждежд «”..."><div class="card-header-row"><h2 class="card-title">محبتن جو عالمي ڏينهن ۽ سنڌ</h2><span class="card-date">جمع 14 فيبروري 2014ع</span></div><p class="card-snippet">гЌ» д ћж Џ«бгн ڏндед ۽ ”дڌ ћгЏ 14 Ён»—ж—н 2014Џ Џ‘ё »е еڪ Џћн» «Ќ”«” ћж д«дЅх ¬ен° Ржн«° ڪ«∆д« ћж ”ڀ —дР ед Џ‘ё ۾ ∆н ”г«нб ¬ен° «д”«д ћжд ѕ«ќбн ۽ ќ«—ћн ڪнЁн жд° «Ќ”«”д ћж «ждежд «”...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_9.html" class="article-card" data-title="سَرٻاٺ، سرگوشيون ۽.....!!" data-year="2014" data-snippet="”у—ٻ«ٺ° ”—рж‘нжд ۽.....!! «ڱ«—ж 24 ћжд 2014џ фће«“у ћж гбڪн ”н«” ۾ «д е«∆н ڀн«дڪ ڪ—ѕ«— —енж ¬ен° «еж ће«“ ∆н еж° ћнڪж ¬ڪٽж»— 1999џ ۾ бдڊнѕу г«д «ڏ«гн ”—нбдڪ« жнж° ж—н ћж гжٽнж е —”..."><div class="card-header-row"><h2 class="card-title">سَرٻاٺ، سرگوشيون ۽.....!!</h2><span class="card-date">اڱارو 24 جون 2014ع</span></div><p class="card-snippet">”у—ٻ«ٺ° ”—Рж‘нжд ۽.....!! «ڱ«—ж 24 ћжд 2014Џ Фће«“У ћж гбڪн ”н«” ۾ «д е«∆н ڀн«дڪ ڪ—ѕ«— —енж ¬ен° «еж ће«“ ∆н еж° ћнڪж ¬ڪٽж»— 1999Џ ۾ БдڊнЅу г«д «ڏ«гн ”—нбдڪ« жнж° ж—н ћж гжٽнж е —”...</p><div class="card-footer"><span>⏱️ 10 منٽ</span><span class="card-meta-tag">2014ع</span></div></a><a href="articles/art_11.html" class="article-card" data-title="طالبان سان ڳالهيون!!" data-year="2014" data-snippet="ў«б»«д ”«д ڳ«бенжд!! «ڱ«—ж 04 ён»—ж—н 2014џ «еж »ќћ е «бнڪ‘д ћн ڏе«ڙд ۾ ∆н ‘—жџ ٿн жнж еж е гбڪ е«ڻн ж«÷ќ дгждн ٻе ў»ёд ۾ ж—е«∆ћн нڪж ¬ен° еڪ «ен ћнڪн ў«б»«д ћ« ќ«гн ۽ ٻн« «ен ћнڪн..."><div class="card-header-row"><h2 class="card-title">طالبان سان ڳالهيون!!</h2><span class="card-date">اڱارو 04 فيبروري 2014ع</span></div><p class="card-snippet">Ў«б»«д ”«д ڳ«бенжд!! «ڱ«—ж 04 Ён»—ж—н 2014Џ «еж »ЌЋ е «бнڪ‘д ћн ڏе«ڙд ۾ ∆н ‘—жЏ ٿн жнж еж е гбڪ е«ڻн ж«÷Ќ дгждн ٻе Ў»ёд ۾ ж—е«∆ћн Нڪж ¬ен° еڪ «ен ћнڪн Ў«б»«д ћ« Ќ«гн ۽ ٻн« «ен ћнڪн...</p><div class="card-footer"><span>⏱️ 7 منٽ</span><span class="card-meta-tag">2014ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>

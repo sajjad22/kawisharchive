@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sd" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قادر لاشاري - ڪاوش آرڪائيو</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+<body class="theme-sepia">
+  <div class="container">
+    <nav class="nav-toolbar">
+      <a href="../index.html" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+      </div>
+    </nav>
+    <header class="main-header">
+      <div class="author-badge">QL</div>
+      <h1>قادر لاشاري</h1>
+      <div class="author-english-sub">QADIR LASHARI</div>
+      <p>ڪُل <span id="visibleCount">5</span> مضمون</p>
+    </header>
+    <section class="controls-card">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+      </div>
+      <div class="filters-row">
+        <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+        <button class="filter-btn" onclick="filterYear('2017')">2017ع</button>
+<button class="filter-btn" onclick="filterYear('2016')">2016ع</button>
+<button class="filter-btn" onclick="filterYear('2013')">2013ع</button>
+      </div>
+    </section>
+    <main class="articles-grid"><a href="articles/art_5.html" class="article-card" data-title="قصو قيدين جي بادشاهيءَ جو!" data-year="2017" data-snippet="ڪنهن به جيل جي ٻاهران بيهي جيڪڏهن ڪو ماڻهو چوي ته هن جيل ۾ جيل عملو قيد آهي ۽ قيدي آزاد آهن ته ان ڳالهه تي گهٽ ماڻهو ڀروسو ڪندا ۽ ڳالهه ڪندڙ جي سياڻپ تي شڪ ڪندا، ڇو ته جيل جڙيا ئي ..."><div class="card-header-row"><h2 class="card-title">قصو قيدين جي بادشاهيءَ جو!</h2><span class="card-date">ڇنڇر 23 سيپٽمبر 2017ع</span></div><p class="card-snippet">ڪنهن به جيل جي ٻاهران بيهي جيڪڏهن ڪو ماڻهو چوي ته هن جيل ۾ جيل عملو قيد آهي ۽ قيدي آزاد آهن ته ان ڳالهه تي گهٽ ماڻهو ڀروسو ڪندا ۽ ڳالهه ڪندڙ جي سياڻپ تي شڪ ڪندا، ڇو ته جيل جڙيا ئي ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2017ع</span></div></a><a href="articles/art_2.html" class="article-card" data-title="اي ڊي خواجه کان ڪير ناراض آهي؟" data-year="2016" data-snippet="هي ڪجهه ئي مهينا اڳ جي ڳالهه آهي، جو قصو پوليس جي ليگل برانچ کان چڙهي ويو هو. اسسٽنٽ ايڊووڪيٽ ۽ ايڊووڪيٽ جنرل به بيوس بڻجي ويا هئا. پوليس جي ليگل برانچ، سرڪاري وڪيلن کان معاملو چڙه..."><div class="card-header-row"><h2 class="card-title">اي ڊي خواجه کان ڪير ناراض آهي؟</h2><span class="card-date">سومر 28 نومبر 2016ع</span></div><p class="card-snippet">هي ڪجهه ئي مهينا اڳ جي ڳالهه آهي، جو قصو پوليس جي ليگل برانچ کان چڙهي ويو هو. اسسٽنٽ ايڊووڪيٽ ۽ ايڊووڪيٽ جنرل به بيوس بڻجي ويا هئا. پوليس جي ليگل برانچ، سرڪاري وڪيلن کان معاملو چڙه...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_3.html" class="article-card" data-title="ڪراچي ۾ هوٽل کي لڳل باهه" data-year="2016" data-snippet="هي ڪجهه ئي مهينا اڳ جي ڳالهه آهي، جو قصو پوليس جي ليگل برانچ کان چڙهي ويو هو. اسسٽنٽ ايڊووڪيٽ ۽ ايڊووڪيٽ جنرل به بيوس بڻجي ويا هئا. پوليس جي ليگل برانچ، سرڪاري وڪيلن کان معاملو چڙه..."><div class="card-header-row"><h2 class="card-title">ڪراچي ۾ هوٽل کي لڳل باهه</h2><span class="card-date">اڱارو 06 ڊسمبر 2016ع</span></div><p class="card-snippet">هي ڪجهه ئي مهينا اڳ جي ڳالهه آهي، جو قصو پوليس جي ليگل برانچ کان چڙهي ويو هو. اسسٽنٽ ايڊووڪيٽ ۽ ايڊووڪيٽ جنرل به بيوس بڻجي ويا هئا. پوليس جي ليگل برانچ، سرڪاري وڪيلن کان معاملو چڙه...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2016ع</span></div></a><a href="articles/art_1.html" class="article-card" data-title="ڪاچي م قائم ٿيل وڏيرن جون ڪورٽون ۽ اڻلڀ انصاف" data-year="2013" data-snippet="ڪ«нн г ё«∆г ٿнб жڏн—д ћжд ڪж—ٽжд ۽ «ڻбڀ «д’«ё ڇдڇ— 14 ”нбٽг»— 2013 џ «е« ڳ«бее ٻڌн «же«д шн ќн— ٿндѕн е ڪ«ڇн ۾ еڪ ڳжٺ «еڙж »е ¬ен° ћдед ћж д«бж ∆н фжڏн—д ћж ڳжٺу ¬ен. ’ѕнд ш«д ё«∆г..."><div class="card-header-row"><h2 class="card-title">ڪاچي م قائم ٿيل وڏيرن جون ڪورٽون ۽ اڻلڀ انصاف</h2><span class="card-date">ڇنڇر 14 سيپٽمبر 2013 ع</span></div><p class="card-snippet">ڪ«Нн г ё«∆г ٿнб жڏн—д ћжд ڪж—ٽжд ۽ «ڻбڀ «д’«Ё ڇдڇ— 14 ”нБٽг»— 2013 Џ «е« ڳ«бее ٻڌн «же«д Шн Ќн— ٿндѕн е ڪ«ڇн ۾ еڪ ڳжٺ «еڙж »е ¬ен° ћдед ћж д«бж ∆н Фжڏн—д ћж ڳжٺУ ¬ен. ’ѕнд Ш«д ё«∆г...</p><div class="card-footer"><span>⏱️ 8 منٽ</span><span class="card-meta-tag">2013ع</span></div></a><a href="articles/art_4.html" class="article-card" data-title="ڪراچي ٽارگيٽيڊ آپريشن: حالتون ڪهڙي پاسي پيون وڃن؟!" data-year="2013" data-snippet="ڪ—«нн ٽ«—рнٽнڊ ¬б—н‘д: ќ«б жд ڪеڙн б«”н бнжд жڃдњ! ќгн” 03 ¬ڪٽж»— 2013џ е— г«ڻежѕу ћн ќж«е‘ ¬ен е° ѕе‘ р—ѕ дўнгд ќб«ё ڪ«——ж«∆н ٿ∆н ڇж е ڪ—«ннѕу ۾ е«ڻ б«ڻн гٿн ш«д нڙедѕж бнж жڃн° џ..."><div class="card-header-row"><h2 class="card-title">ڪراچي ٽارگيٽيڊ آپريشن: حالتون ڪهڙي پاسي پيون وڃن؟!</h2><span class="card-date">خميس 03 آڪٽوبر 2013ع</span></div><p class="card-snippet">ڪ—«Нн ٽ«—Рнٽнڊ ¬Б—н‘д: Ќ«б жд ڪеڙн Б«”н Бнжд жڃдњ! ќгн” 03 ¬ڪٽж»— 2013Џ е— г«ڻежЅу ћн ќж«е‘ ¬ен е° ѕе‘ Р—ѕ дўнгд ќб«Ё ڪ«——ж«∆н ٿ∆н ڇж е ڪ—«НнЅу ۾ е«ڻ Б«ڻн гٿн Ш«д Нڙедѕж Бнж жڃн° Џ...</p><div class="card-footer"><span>⏱️ 6 منٽ</span><span class="card-meta-tag">2013ع</span></div></a></main>
+  </div>
+  <script>
+const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+document.body.className = savedTheme;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+});
+
+function changeTheme(themeName) {
+  document.body.className = themeName;
+  localStorage.setItem('kawish_theme_static', themeName);
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function filterArticles() {
+  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.article-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-title') || '';
+    const snippet = card.getAttribute('data-snippet') || '';
+    const year = card.getAttribute('data-year') || '';
+    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
+    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
+    else { card.style.display = 'none'; }
+  });
+  const counterEl = document.getElementById('visibleCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterAuthorsHub() {
+  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+  const cards = document.querySelectorAll('.author-hub-card');
+  let visibleCount = 0;
+  cards.forEach(card => {
+    const title = card.getAttribute('data-name') || '';
+    const englishName = card.getAttribute('data-english') || '';
+    if (!query || title.includes(query) || englishName.includes(query)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  const counterEl = document.getElementById('visibleAuthorCount');
+  if (counterEl) counterEl.textContent = visibleCount;
+}
+
+function filterYear(yearStr) {
+  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
+  });
+  filterArticles();
+}
+</script>
+</body>
+</html>
