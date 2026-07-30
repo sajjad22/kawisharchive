@@ -1,0 +1,695 @@
+[
+  {
+    "id": "ASIF JILANI",
+    "name_en": "ASIF JILANI",
+    "name_sd": "آصف جيلاني",
+    "initials": "AJ",
+    "count": 258
+  },
+  {
+    "id": "AGHA SALEEM",
+    "name_en": "AGHA SALEEM",
+    "name_sd": "آغا سليم",
+    "initials": "AS",
+    "count": 19
+  },
+  {
+    "id": "AFTAB AHMED KHANZADA",
+    "name_en": "AFTAB AHMED KHANZADA",
+    "name_sd": "آفتاب احمد خانزاده",
+    "initials": "AA",
+    "count": 11
+  },
+  {
+    "id": "IBRAHIM KUMBHAR",
+    "name_en": "IBRAHIM KUMBHAR",
+    "name_sd": "ابراهيم ڪنڀر",
+    "initials": "IK",
+    "count": 375
+  },
+  {
+    "id": "IKHTIAR KHOKHAR",
+    "name_en": "IKHTIAR KHOKHAR",
+    "name_sd": "اختيار کوکر",
+    "initials": "IK",
+    "count": 118
+  },
+  {
+    "id": "IDRESS RAJPUT",
+    "name_en": "IDRESS RAJPUT",
+    "name_sd": "ادريس راجپوت",
+    "initials": "IR",
+    "count": 421
+  },
+  {
+    "id": "ARBAB ABDUL MALK",
+    "name_en": "ARBAB ABDUL MALK",
+    "name_sd": "ارباب عبدالملڪ",
+    "initials": "AA",
+    "count": 55
+  },
+  {
+    "id": "ARBAB NAIK MOHAMMAD",
+    "name_en": "ARBAB NAIK MOHAMMAD",
+    "name_sd": "ارباب نيڪ محمد",
+    "initials": "AN",
+    "count": 282
+  },
+  {
+    "id": "ISHAQUE SAMEJO",
+    "name_en": "ISHAQUE SAMEJO",
+    "name_sd": "اسحاق سميجو",
+    "initials": "IS",
+    "count": 25
+  },
+  {
+    "id": "ISHTIAQ ANSARI",
+    "name_en": "ISHTIAQ ANSARI",
+    "name_sd": "اشتياق انصاري",
+    "initials": "IA",
+    "count": 18
+  },
+  {
+    "id": "ASHFAQUE AZAR",
+    "name_en": "ASHFAQUE AZAR",
+    "name_sd": "اشفاق آزر",
+    "initials": "AA",
+    "count": 333
+  },
+  {
+    "id": "AIJAZ MEHAR",
+    "name_en": "AIJAZ MEHAR",
+    "name_sd": "اعجاز مهر",
+    "initials": "AM",
+    "count": 83
+  },
+  {
+    "id": "ALTAF SHAIKH",
+    "name_en": "ALTAF SHAIKH",
+    "name_sd": "الطاف شيخ",
+    "initials": "AS",
+    "count": 106
+  },
+  {
+    "id": "ALLAH WARAYO BOZDAR",
+    "name_en": "ALLAH WARAYO BOZDAR",
+    "name_sd": "الله ورايو بوزدار",
+    "initials": "AW",
+    "count": 12
+  },
+  {
+    "id": "IMTIAZ ABRO",
+    "name_en": "IMTIAZ ABRO",
+    "name_sd": "امتياز ابڙو",
+    "initials": "IA",
+    "count": 88
+  },
+  {
+    "id": "IMDAD HUSSAINI",
+    "name_en": "IMDAD HUSSAINI",
+    "name_sd": "امداد حسيني",
+    "initials": "IH",
+    "count": 1
+  },
+  {
+    "id": "IMDAD SOOMRO",
+    "name_en": "IMDAD SOOMRO",
+    "name_sd": "امداد سومرو",
+    "initials": "IS",
+    "count": 176
+  },
+  {
+    "id": "AMAR JALIL",
+    "name_en": "AMAR JALIL",
+    "name_sd": "امر جليل",
+    "initials": "AJ",
+    "count": 2
+  },
+  {
+    "id": "ANEETA SHAH",
+    "name_en": "ANEETA SHAH",
+    "name_sd": "انيتا شاهه",
+    "initials": "AS",
+    "count": 27
+  },
+  {
+    "id": "AYAZ ALAM ABRO",
+    "name_en": "AYAZ ALAM ABRO",
+    "name_sd": "اياز عالم ابڙو",
+    "initials": "AA",
+    "count": 9
+  },
+  {
+    "id": "AYAZ LATIF PALEJO",
+    "name_en": "AYAZ LATIF PALEJO",
+    "name_sd": "اياز لطيف پليجو",
+    "initials": "AL",
+    "count": 9
+  },
+  {
+    "id": "ZAMEER GHOOMRO BARASTER",
+    "name_en": "ZAMEER GHOOMRO BARASTER",
+    "name_sd": "بئريسٽر ضمير گھمرو",
+    "initials": "ZG",
+    "count": 288
+  },
+  {
+    "id": "BADAR ABRO",
+    "name_en": "BADAR ABRO",
+    "name_sd": "بدر ابڙو",
+    "initials": "BA",
+    "count": 8
+  },
+  {
+    "id": "BENAZIR BHUTTO",
+    "name_en": "BENAZIR BHUTTO",
+    "name_sd": "بينظير ڀٽو",
+    "initials": "BB",
+    "count": 14
+  },
+  {
+    "id": "TAJ JOYO",
+    "name_en": "TAJ JOYO",
+    "name_sd": "تاج جويو",
+    "initials": "TJ",
+    "count": 15
+  },
+  {
+    "id": "TAJ HAYER",
+    "name_en": "TAJ HAYER",
+    "name_sd": "تاج حائر",
+    "initials": "TH",
+    "count": 14
+  },
+  {
+    "id": "JAM SAQI",
+    "name_en": "JAM SAQI",
+    "name_sd": "جام ساقي",
+    "initials": "JS",
+    "count": 21
+  },
+  {
+    "id": "JAMI CHANDIO",
+    "name_en": "JAMI CHANDIO",
+    "name_sd": "جامي چانڊيو",
+    "initials": "JC",
+    "count": 166
+  },
+  {
+    "id": "HAFEES KUMBHAR",
+    "name_en": "HAFEES KUMBHAR",
+    "name_sd": "حفيظ ڪنڀر",
+    "initials": "HK",
+    "count": 130
+  },
+  {
+    "id": "HALEEM BAGHI",
+    "name_en": "HALEEM BAGHI",
+    "name_sd": "حليم باغي",
+    "initials": "HB",
+    "count": 1
+  },
+  {
+    "id": "HALEEM BROHI",
+    "name_en": "HALEEM BROHI",
+    "name_sd": "حليم بروهي",
+    "initials": "HB",
+    "count": 71
+  },
+  {
+    "id": "HUMERA ALVANI",
+    "name_en": "HUMERA ALVANI",
+    "name_sd": "حميرا علواڻي",
+    "initials": "HA",
+    "count": 191
+  },
+  {
+    "id": "KHAN MUHAMMAD",
+    "name_en": "KHAN MUHAMMAD",
+    "name_sd": "خان محمد",
+    "initials": "KM",
+    "count": 1
+  },
+  {
+    "id": "KHURSHEED QAIMKHANI",
+    "name_en": "KHURSHEED QAIMKHANI",
+    "name_sd": "خورشيد قائمخاني",
+    "initials": "KQ",
+    "count": 2
+  },
+  {
+    "id": "DUR MUHAMMAD PATHAN",
+    "name_en": "DUR MUHAMMAD PATHAN",
+    "name_sd": "در محمد پٺاڻ",
+    "initials": "DM",
+    "count": 1
+  },
+  {
+    "id": "DASGIR BHATTI",
+    "name_en": "DASGIR BHATTI",
+    "name_sd": "دستگير ڀٽي",
+    "initials": "DB",
+    "count": 224
+  },
+  {
+    "id": "DODO CHANDIO",
+    "name_en": "DODO CHANDIO",
+    "name_sd": "دودو چانڊيو",
+    "initials": "DC",
+    "count": 195
+  },
+  {
+    "id": "ZULFIQAR QADRI",
+    "name_en": "ZULFIQAR QADRI",
+    "name_sd": "ذوالفقار قادري",
+    "initials": "ZQ",
+    "count": 100
+  },
+  {
+    "id": "ZULFIQAR BHUGIO",
+    "name_en": "ZULFIQAR BHUGIO",
+    "name_sd": "ذوالفقار ڀٽي",
+    "initials": "ZB",
+    "count": 51
+  },
+  {
+    "id": "ZULFIQAR GORAMANI",
+    "name_en": "ZULFIQAR GORAMANI",
+    "name_sd": "ذوالفقار گورماڻي",
+    "initials": "ZG",
+    "count": 56
+  },
+  {
+    "id": "RUKHSANA PREET CHANNAR",
+    "name_en": "RUKHSANA PREET CHANNAR",
+    "name_sd": "رخصانه پريت چنڙ",
+    "initials": "RP",
+    "count": 3
+  },
+  {
+    "id": "RASOOL BUX PALEJO",
+    "name_en": "RASOOL BUX PALEJO",
+    "name_sd": "رسول بخش پليجو",
+    "initials": "RB",
+    "count": 50
+  },
+  {
+    "id": "RIAZ SOHAIL",
+    "name_en": "RIAZ SOHAIL",
+    "name_sd": "رياض سهيل",
+    "initials": "RS",
+    "count": 47
+  },
+  {
+    "id": "ZAHIDA DETHO",
+    "name_en": "ZAHIDA DETHO",
+    "name_sd": "زاهده ڏيٿو",
+    "initials": "ZD",
+    "count": 30
+  },
+  {
+    "id": "ZAIB SINDHI",
+    "name_en": "ZAIB SINDHI",
+    "name_sd": "زيب سنڌي",
+    "initials": "ZS",
+    "count": 254
+  },
+  {
+    "id": "SATTAR SAROHI",
+    "name_en": "SATTAR SAROHI",
+    "name_sd": "ستار سروهي",
+    "initials": "SS",
+    "count": 20
+  },
+  {
+    "id": "SATRAM MEHSHWARI",
+    "name_en": "SATRAM MEHSHWARI",
+    "name_sd": "سترام مهيشوري",
+    "initials": "SM",
+    "count": 11
+  },
+  {
+    "id": "SEHAR GUL BHATTI",
+    "name_en": "SEHAR GUL BHATTI",
+    "name_sd": "سحر گل ڀٽي",
+    "initials": "SG",
+    "count": 62
+  },
+  {
+    "id": "SOHAIL SANGI",
+    "name_en": "SOHAIL SANGI",
+    "name_sd": "سهيل سانگي",
+    "initials": "SS",
+    "count": 187
+  },
+  {
+    "id": "SOHAIL MEMON",
+    "name_en": "SOHAIL MEMON",
+    "name_sd": "سهيل ميمڻ",
+    "initials": "SM",
+    "count": 371
+  },
+  {
+    "id": "SIKANDAR HOLIO",
+    "name_en": "SIKANDAR HOLIO",
+    "name_sd": "سڪندر هليو",
+    "initials": "SH",
+    "count": 158
+  },
+  {
+    "id": "SHABNAM GUL",
+    "name_en": "SHABNAM GUL",
+    "name_sd": "شبنم گل",
+    "initials": "SG",
+    "count": 101
+  },
+  {
+    "id": "SHARMILA FAROOQI",
+    "name_en": "SHARMILA FAROOQI",
+    "name_sd": "شرميلا فاروقي",
+    "initials": "SF",
+    "count": 17
+  },
+  {
+    "id": "SHOUKAT HUSSAIN SHORO",
+    "name_en": "SHOUKAT HUSSAIN SHORO",
+    "name_sd": "شوڪت حسين شورو",
+    "initials": "SH",
+    "count": 43
+  },
+  {
+    "id": "TARIQ ALAM ABRO",
+    "name_en": "TARIQ ALAM ABRO",
+    "name_sd": "طارق عالم ابڙو",
+    "initials": "TA",
+    "count": 7
+  },
+  {
+    "id": "ABDUL HAI PALEJO",
+    "name_en": "ABDUL HAI PALEJO",
+    "name_sd": "عبدالحئي پليجو",
+    "initials": "AH",
+    "count": 143
+  },
+  {
+    "id": "ABDUL QADAR JUNEJO",
+    "name_en": "ABDUL QADAR JUNEJO",
+    "name_sd": "عبدالقادر جوڻيجو",
+    "initials": "AQ",
+    "count": 58
+  },
+  {
+    "id": "ABDUL MAJEED NIZAMANI",
+    "name_en": "ABDUL MAJEED NIZAMANI",
+    "name_sd": "عبدالمجيد نظاماڻي",
+    "initials": "AM",
+    "count": 5
+  },
+  {
+    "id": "IRFANA MALLAH",
+    "name_en": "IRFANA MALLAH",
+    "name_sd": "عرفانه ملاح",
+    "initials": "IM",
+    "count": 47
+  },
+  {
+    "id": "AZIZ SOLANGI",
+    "name_en": "AZIZ SOLANGI",
+    "name_sd": "عزيز سولنگي",
+    "initials": "AS",
+    "count": 34
+  },
+  {
+    "id": "ALI KAZI",
+    "name_en": "ALI KAZI",
+    "name_sd": "علي قاضي",
+    "initials": "AK",
+    "count": 179
+  },
+  {
+    "id": "AMAAR SINDHO",
+    "name_en": "AMAAR SINDHO",
+    "name_sd": "عمار سنڌو",
+    "initials": "AS",
+    "count": 239
+  },
+  {
+    "id": "GHULAM NABI MUGHAL",
+    "name_en": "GHULAM NABI MUGHAL",
+    "name_sd": "غلام نبي مغل",
+    "initials": "GN",
+    "count": 8
+  },
+  {
+    "id": "FATIMA BHUTTO",
+    "name_en": "FATIMA BHUTTO",
+    "name_sd": "فاطمه ڀٽو",
+    "initials": "FB",
+    "count": 3
+  },
+  {
+    "id": "FAIZ KHOSO",
+    "name_en": "FAIZ KHOSO",
+    "name_sd": "فيض کوسو",
+    "initials": "FK",
+    "count": 32
+  },
+  {
+    "id": "QADIR LASHARI",
+    "name_en": "QADIR LASHARI",
+    "name_sd": "قادر لاشاري",
+    "initials": "QL",
+    "count": 5
+  },
+  {
+    "id": "QURBAN BALOCH",
+    "name_en": "QURBAN BALOCH",
+    "name_sd": "قربان بلوچ",
+    "initials": "QB",
+    "count": 84
+  },
+  {
+    "id": "LATIF JAMAL",
+    "name_en": "LATIF JAMAL",
+    "name_sd": "لطيف جمال",
+    "initials": "LJ",
+    "count": 187
+  },
+  {
+    "id": "LIAQUAT AZIZ",
+    "name_en": "LIAQUAT AZIZ",
+    "name_sd": "لياقت عزيز",
+    "initials": "LA",
+    "count": 175
+  },
+  {
+    "id": "MARVI MEMON",
+    "name_en": "MARVI MEMON",
+    "name_sd": "ماروي ميمڻ",
+    "initials": "MM",
+    "count": 19
+  },
+  {
+    "id": "MARK TELLY",
+    "name_en": "MARK TELLY",
+    "name_sd": "مارڪ ٽيلي",
+    "initials": "MT",
+    "count": 1
+  },
+  {
+    "id": "MOHAMMAD IBRAHIM JOYO",
+    "name_en": "MOHAMMAD IBRAHIM JOYO",
+    "name_sd": "محمد ابراهيم جويو",
+    "initials": "MI",
+    "count": 74
+  },
+  {
+    "id": "MUHAMMAD ALI SHAH",
+    "name_en": "MUHAMMAD ALI SHAH",
+    "name_sd": "محمد علي شاهه",
+    "initials": "MA",
+    "count": 13
+  },
+  {
+    "id": "MEHMOOD MUGHAL",
+    "name_en": "MEHMOOD MUGHAL",
+    "name_sd": "محمود مغل",
+    "initials": "MM",
+    "count": 293
+  },
+  {
+    "id": "MASOOD LOHAR",
+    "name_en": "MASOOD LOHAR",
+    "name_sd": "مسعود لوهار",
+    "initials": "ML",
+    "count": 13
+  },
+  {
+    "id": "MUSHTAFA NANGRAJ",
+    "name_en": "MUSHTAFA NANGRAJ",
+    "name_sd": "مصطفيٰ نانگراج",
+    "initials": "MN",
+    "count": 1
+  },
+  {
+    "id": "MASHOOQ ODHANO",
+    "name_en": "MASHOOQ ODHANO",
+    "name_sd": "معشوق اوڌاڻو",
+    "initials": "MO",
+    "count": 1
+  },
+  {
+    "id": "MUMTAZ BUKHARI",
+    "name_en": "MUMTAZ BUKHARI",
+    "name_sd": "ممتاز بخاري",
+    "initials": "MB",
+    "count": 46
+  },
+  {
+    "id": "MANZOOR MIRANI",
+    "name_en": "MANZOOR MIRANI",
+    "name_sd": "منظور ميراڻي",
+    "initials": "MM",
+    "count": 291
+  },
+  {
+    "id": "MANOJ KUMAR",
+    "name_en": "MANOJ KUMAR",
+    "name_sd": "منوج ڪمار",
+    "initials": "MK",
+    "count": 87
+  },
+  {
+    "id": "MEHTAB AKBAR RASHDI",
+    "name_en": "MEHTAB AKBAR RASHDI",
+    "name_sd": "مهتاب اڪبر راشدي",
+    "initials": "MA",
+    "count": 3
+  },
+  {
+    "id": "MAKAN SHAH RIZVI",
+    "name_en": "MAKAN SHAH RIZVI",
+    "name_sd": "مکان شاهه رضوي",
+    "initials": "MS",
+    "count": 72
+  },
+  {
+    "id": "NASIR ALI PANHWAR",
+    "name_en": "NASIR ALI PANHWAR",
+    "name_sd": "ناصر علي پنهور",
+    "initials": "NA",
+    "count": 14
+  },
+  {
+    "id": "NISAR KHOKHAR",
+    "name_en": "NISAR KHOKHAR",
+    "name_sd": "نثار کوکر",
+    "initials": "NK",
+    "count": 193
+  },
+  {
+    "id": "NISAR KHORO",
+    "name_en": "NISAR KHORO",
+    "name_sd": "نثار کھڙو",
+    "initials": "NK",
+    "count": 23
+  },
+  {
+    "id": "NUZHAT PATHAN",
+    "name_en": "NUZHAT PATHAN",
+    "name_sd": "نزهت پٺاڻ",
+    "initials": "NP",
+    "count": 3
+  },
+  {
+    "id": "NASEER MIRZA",
+    "name_en": "NASEER MIRZA",
+    "name_sd": "نصير مرزا",
+    "initials": "NM",
+    "count": 561
+  },
+  {
+    "id": "NASEER MEMON",
+    "name_en": "NASEER MEMON",
+    "name_sd": "نصير ميمڻ",
+    "initials": "NM",
+    "count": 202
+  },
+  {
+    "id": "NIZAM SHAIKH",
+    "name_en": "NIZAM SHAIKH",
+    "name_sd": "نظام شيخ",
+    "initials": "NS",
+    "count": 1
+  },
+  {
+    "id": "NAWAZ KUMBHAR",
+    "name_en": "NAWAZ KUMBHAR",
+    "name_sd": "نواز ڪنڀر",
+    "initials": "NK",
+    "count": 212
+  },
+  {
+    "id": "M. B. SOOMRO",
+    "name_en": "M. B. SOOMRO",
+    "name_sd": "يم بي سومرو",
+    "initials": "MB",
+    "count": 154
+  },
+  {
+    "id": "YOUSUF LAGHARI",
+    "name_en": "YOUSUF LAGHARI",
+    "name_sd": "يوسف لغاري",
+    "initials": "YL",
+    "count": 24
+  },
+  {
+    "id": "DR. AYUB SHAIKH",
+    "name_en": "DR. AYUB SHAIKH",
+    "name_sd": "ڊاڪٽر ايوب شيخ",
+    "initials": "DA",
+    "count": 240
+  },
+  {
+    "id": "DR. AZIZ TALPUR",
+    "name_en": "DR. AZIZ TALPUR",
+    "name_sd": "ڊاڪٽر عزيز ٽالپر",
+    "initials": "DA",
+    "count": 261
+  },
+  {
+    "id": "DR. MUSARRAT KHOWAJA",
+    "name_en": "DR. MUSARRAT KHOWAJA",
+    "name_sd": "ڊاڪٽر مسرت خواجه",
+    "initials": "DM",
+    "count": 194
+  },
+  {
+    "id": "DR. MIR ALAM MARI",
+    "name_en": "DR. MIR ALAM MARI",
+    "name_sd": "ڊاڪٽر مير عالم مري",
+    "initials": "DM",
+    "count": 32
+  },
+  {
+    "id": "KHELDAS KOHISTANI",
+    "name_en": "KHELDAS KOHISTANI",
+    "name_sd": "کيلداس ڪوهستاني",
+    "initials": "KK",
+    "count": 12
+  },
+  {
+    "id": "KHATAO JANI",
+    "name_en": "KHATAO JANI",
+    "name_sd": "کٽائو جاني",
+    "initials": "KJ",
+    "count": 38
+  },
+  {
+    "id": "GULSHAN LAGHARI",
+    "name_en": "GULSHAN LAGHARI",
+    "name_sd": "گلشن لغاري",
+    "initials": "GL",
+    "count": 9
+  }
+]
