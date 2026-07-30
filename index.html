@@ -4,112 +4,292 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>روزاني ڪاوش - مضمون ۽ مقالا آرڪائيو</title>
-  <link rel="stylesheet" href="assets/style.css?v=4.0">
+  <link rel="stylesheet" href="assets/style.css?v=5.0">
 </head>
 <body class="theme-sepia">
-  <div class="container">
-    <nav class="nav-toolbar">
-      <div style="font-weight: bold; font-size: 18px;">📰 روزاني ڪاوش مقالا آرڪائيو</div>
-      <div class="theme-controls">
-        <button class="theme-btn" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
-        <button class="theme-btn" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
-        <button class="theme-btn" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
-      </div>
-    </nav>
-    <header class="main-header">
-      <div class="author-badge">K</div>
-      <h1>مصنفن جو مکيه پورٽل</h1>
-      <p>ڪُل <span id="visibleAuthorCount">99</span> مصنفن جا مضمون موجود آهن</p>
-    </header>
-
-    <section class="controls-card">
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="hubSearchInput" class="search-input" placeholder="مصنف جي نالي مان ڳوليو..." oninput="filterAuthorsHub()">
-      </div>
-    </section>
-
-    <main class="authors-grid"><a href="ASIF JILANI/index.html" class="author-hub-card" data-name="آصف جيلاني" data-english="asif jilani"><div class="hub-avatar">AJ</div><div class="hub-title">آصف جيلاني</div><div class="hub-title-english">ASIF JILANI</div><div class="hub-meta"><span>📚 258 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AGHA SALEEM/index.html" class="author-hub-card" data-name="آغا سليم" data-english="agha saleem"><div class="hub-avatar">AS</div><div class="hub-title">آغا سليم</div><div class="hub-title-english">AGHA SALEEM</div><div class="hub-meta"><span>📚 19 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AFTAB AHMED KHANZADA/index.html" class="author-hub-card" data-name="آفتاب احمد خانزاده" data-english="aftab ahmed khanzada"><div class="hub-avatar">AA</div><div class="hub-title">آفتاب احمد خانزاده</div><div class="hub-title-english">AFTAB AHMED KHANZADA</div><div class="hub-meta"><span>📚 11 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IBRAHIM KUMBHAR/index.html" class="author-hub-card" data-name="ابراهيم ڪنڀر" data-english="ibrahim kumbhar"><div class="hub-avatar">IK</div><div class="hub-title">ابراهيم ڪنڀر</div><div class="hub-title-english">IBRAHIM KUMBHAR</div><div class="hub-meta"><span>📚 375 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IKHTIAR KHOKHAR/index.html" class="author-hub-card" data-name="اختيار کوکر" data-english="ikhtiar khokhar"><div class="hub-avatar">IK</div><div class="hub-title">اختيار کوکر</div><div class="hub-title-english">IKHTIAR KHOKHAR</div><div class="hub-meta"><span>📚 118 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IDRESS RAJPUT/index.html" class="author-hub-card" data-name="ادريس راجپوت" data-english="idress rajput"><div class="hub-avatar">IR</div><div class="hub-title">ادريس راجپوت</div><div class="hub-title-english">IDRESS RAJPUT</div><div class="hub-meta"><span>📚 421 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ARBAB ABDUL MALK/index.html" class="author-hub-card" data-name="ارباب عبدالملڪ" data-english="arbab abdul malk"><div class="hub-avatar">AA</div><div class="hub-title">ارباب عبدالملڪ</div><div class="hub-title-english">ARBAB ABDUL MALK</div><div class="hub-meta"><span>📚 55 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ARBAB NAIK MOHAMMAD/index.html" class="author-hub-card" data-name="ارباب نيڪ محمد" data-english="arbab naik mohammad"><div class="hub-avatar">AN</div><div class="hub-title">ارباب نيڪ محمد</div><div class="hub-title-english">ARBAB NAIK MOHAMMAD</div><div class="hub-meta"><span>📚 282 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ISHAQUE SAMEJO/index.html" class="author-hub-card" data-name="اسحاق سميجو" data-english="ishaque samejo"><div class="hub-avatar">IS</div><div class="hub-title">اسحاق سميجو</div><div class="hub-title-english">ISHAQUE SAMEJO</div><div class="hub-meta"><span>📚 25 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ISHTIAQ ANSARI/index.html" class="author-hub-card" data-name="اشتياق انصاري" data-english="ishtiaq ansari"><div class="hub-avatar">IA</div><div class="hub-title">اشتياق انصاري</div><div class="hub-title-english">ISHTIAQ ANSARI</div><div class="hub-meta"><span>📚 18 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ASHFAQUE AZAR/index.html" class="author-hub-card" data-name="اشفاق آزر" data-english="ashfaque azar"><div class="hub-avatar">AA</div><div class="hub-title">اشفاق آزر</div><div class="hub-title-english">ASHFAQUE AZAR</div><div class="hub-meta"><span>📚 333 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AIJAZ MEHAR/index.html" class="author-hub-card" data-name="اعجاز مهر" data-english="aijaz mehar"><div class="hub-avatar">AM</div><div class="hub-title">اعجاز مهر</div><div class="hub-title-english">AIJAZ MEHAR</div><div class="hub-meta"><span>📚 83 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ALTAF SHAIKH/index.html" class="author-hub-card" data-name="الطاف شيخ" data-english="altaf shaikh"><div class="hub-avatar">AS</div><div class="hub-title">الطاف شيخ</div><div class="hub-title-english">ALTAF SHAIKH</div><div class="hub-meta"><span>📚 106 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ALLAH WARAYO BOZDAR/index.html" class="author-hub-card" data-name="الله ورايو بوزدار" data-english="allah warayo bozdar"><div class="hub-avatar">AW</div><div class="hub-title">الله ورايو بوزدار</div><div class="hub-title-english">ALLAH WARAYO BOZDAR</div><div class="hub-meta"><span>📚 12 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IMTIAZ ABRO/index.html" class="author-hub-card" data-name="امتياز ابڙو" data-english="imtiaz abro"><div class="hub-avatar">IA</div><div class="hub-title">امتياز ابڙو</div><div class="hub-title-english">IMTIAZ ABRO</div><div class="hub-meta"><span>📚 88 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IMDAD HUSSAINI/index.html" class="author-hub-card" data-name="امداد حسيني" data-english="imdad hussaini"><div class="hub-avatar">IH</div><div class="hub-title">امداد حسيني</div><div class="hub-title-english">IMDAD HUSSAINI</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IMDAD SOOMRO/index.html" class="author-hub-card" data-name="امداد سومرو" data-english="imdad soomro"><div class="hub-avatar">IS</div><div class="hub-title">امداد سومرو</div><div class="hub-title-english">IMDAD SOOMRO</div><div class="hub-meta"><span>📚 176 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AMAR JALIL/index.html" class="author-hub-card" data-name="امر جليل" data-english="amar jalil"><div class="hub-avatar">AJ</div><div class="hub-title">امر جليل</div><div class="hub-title-english">AMAR JALIL</div><div class="hub-meta"><span>📚 2 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ANEETA SHAH/index.html" class="author-hub-card" data-name="انيتا شاهه" data-english="aneeta shah"><div class="hub-avatar">AS</div><div class="hub-title">انيتا شاهه</div><div class="hub-title-english">ANEETA SHAH</div><div class="hub-meta"><span>📚 27 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AYAZ ALAM ABRO/index.html" class="author-hub-card" data-name="اياز عالم ابڙو" data-english="ayaz alam abro"><div class="hub-avatar">AA</div><div class="hub-title">اياز عالم ابڙو</div><div class="hub-title-english">AYAZ ALAM ABRO</div><div class="hub-meta"><span>📚 9 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AYAZ LATIF PALEJO/index.html" class="author-hub-card" data-name="اياز لطيف پليجو" data-english="ayaz latif palejo"><div class="hub-avatar">AL</div><div class="hub-title">اياز لطيف پليجو</div><div class="hub-title-english">AYAZ LATIF PALEJO</div><div class="hub-meta"><span>📚 9 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZAMEER GHOOMRO BARASTER/index.html" class="author-hub-card" data-name="بئريسٽر ضمير گھمرو" data-english="zameer ghoomro baraster"><div class="hub-avatar">ZG</div><div class="hub-title">بئريسٽر ضمير گھمرو</div><div class="hub-title-english">ZAMEER GHOOMRO BARASTER</div><div class="hub-meta"><span>📚 288 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="BADAR ABRO/index.html" class="author-hub-card" data-name="بدر ابڙو" data-english="badar abro"><div class="hub-avatar">BA</div><div class="hub-title">بدر ابڙو</div><div class="hub-title-english">BADAR ABRO</div><div class="hub-meta"><span>📚 8 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="BENAZIR BHUTTO/index.html" class="author-hub-card" data-name="بينظير ڀٽو" data-english="benazir bhutto"><div class="hub-avatar">BB</div><div class="hub-title">بينظير ڀٽو</div><div class="hub-title-english">BENAZIR BHUTTO</div><div class="hub-meta"><span>📚 14 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="TAJ JOYO/index.html" class="author-hub-card" data-name="تاج جويو" data-english="taj joyo"><div class="hub-avatar">TJ</div><div class="hub-title">تاج جويو</div><div class="hub-title-english">TAJ JOYO</div><div class="hub-meta"><span>📚 15 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="TAJ HAYER/index.html" class="author-hub-card" data-name="تاج حائر" data-english="taj hayer"><div class="hub-avatar">TH</div><div class="hub-title">تاج حائر</div><div class="hub-title-english">TAJ HAYER</div><div class="hub-meta"><span>📚 14 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="JAM SAQI/index.html" class="author-hub-card" data-name="جام ساقي" data-english="jam saqi"><div class="hub-avatar">JS</div><div class="hub-title">جام ساقي</div><div class="hub-title-english">JAM SAQI</div><div class="hub-meta"><span>📚 21 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="JAMI CHANDIO/index.html" class="author-hub-card" data-name="جامي چانڊيو" data-english="jami chandio"><div class="hub-avatar">JC</div><div class="hub-title">جامي چانڊيو</div><div class="hub-title-english">JAMI CHANDIO</div><div class="hub-meta"><span>📚 166 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="HAFEES KUMBHAR/index.html" class="author-hub-card" data-name="حفيظ ڪنڀر" data-english="hafees kumbhar"><div class="hub-avatar">HK</div><div class="hub-title">حفيظ ڪنڀر</div><div class="hub-title-english">HAFEES KUMBHAR</div><div class="hub-meta"><span>📚 130 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="HALEEM BAGHI/index.html" class="author-hub-card" data-name="حليم باغي" data-english="haleem baghi"><div class="hub-avatar">HB</div><div class="hub-title">حليم باغي</div><div class="hub-title-english">HALEEM BAGHI</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="HALEEM BROHI/index.html" class="author-hub-card" data-name="حليم بروهي" data-english="haleem brohi"><div class="hub-avatar">HB</div><div class="hub-title">حليم بروهي</div><div class="hub-title-english">HALEEM BROHI</div><div class="hub-meta"><span>📚 71 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="HUMERA ALVANI/index.html" class="author-hub-card" data-name="حميرا علواڻي" data-english="humera alvani"><div class="hub-avatar">HA</div><div class="hub-title">حميرا علواڻي</div><div class="hub-title-english">HUMERA ALVANI</div><div class="hub-meta"><span>📚 191 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="KHAN MUHAMMAD/index.html" class="author-hub-card" data-name="خان محمد" data-english="khan muhammad"><div class="hub-avatar">KM</div><div class="hub-title">خان محمد</div><div class="hub-title-english">KHAN MUHAMMAD</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="KHURSHEED QAIMKHANI/index.html" class="author-hub-card" data-name="خورشيد قائمخاني" data-english="khursheed qaimkhani"><div class="hub-avatar">KQ</div><div class="hub-title">خورشيد قائمخاني</div><div class="hub-title-english">KHURSHEED QAIMKHANI</div><div class="hub-meta"><span>📚 2 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DUR MUHAMMAD PATHAN/index.html" class="author-hub-card" data-name="در محمد پٺاڻ" data-english="dur muhammad pathan"><div class="hub-avatar">DM</div><div class="hub-title">در محمد پٺاڻ</div><div class="hub-title-english">DUR MUHAMMAD PATHAN</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DASGIR BHATTI/index.html" class="author-hub-card" data-name="دستگير ڀٽي" data-english="dasgir bhatti"><div class="hub-avatar">DB</div><div class="hub-title">دستگير ڀٽي</div><div class="hub-title-english">DASGIR BHATTI</div><div class="hub-meta"><span>📚 224 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DODO CHANDIO/index.html" class="author-hub-card" data-name="دودو چانڊيو" data-english="dodo chandio"><div class="hub-avatar">DC</div><div class="hub-title">دودو چانڊيو</div><div class="hub-title-english">DODO CHANDIO</div><div class="hub-meta"><span>📚 195 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZULFIQAR QADRI/index.html" class="author-hub-card" data-name="ذوالفقار قادري" data-english="zulfiqar qadri"><div class="hub-avatar">ZQ</div><div class="hub-title">ذوالفقار قادري</div><div class="hub-title-english">ZULFIQAR QADRI</div><div class="hub-meta"><span>📚 100 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZULFIQAR BHUGIO/index.html" class="author-hub-card" data-name="ذوالفقار ڀٽي" data-english="zulfiqar bhugio"><div class="hub-avatar">ZB</div><div class="hub-title">ذوالفقار ڀٽي</div><div class="hub-title-english">ZULFIQAR BHUGIO</div><div class="hub-meta"><span>📚 51 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZULFIQAR GORAMANI/index.html" class="author-hub-card" data-name="ذوالفقار گورماڻي" data-english="zulfiqar goramani"><div class="hub-avatar">ZG</div><div class="hub-title">ذوالفقار گورماڻي</div><div class="hub-title-english">ZULFIQAR GORAMANI</div><div class="hub-meta"><span>📚 56 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="RUKHSANA PREET CHANNAR/index.html" class="author-hub-card" data-name="رخصانه پريت چنڙ" data-english="rukhsana preet channar"><div class="hub-avatar">RP</div><div class="hub-title">رخصانه پريت چنڙ</div><div class="hub-title-english">RUKHSANA PREET CHANNAR</div><div class="hub-meta"><span>📚 3 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="RASOOL BUX PALEJO/index.html" class="author-hub-card" data-name="رسول بخش پليجو" data-english="rasool bux palejo"><div class="hub-avatar">RB</div><div class="hub-title">رسول بخش پليجو</div><div class="hub-title-english">RASOOL BUX PALEJO</div><div class="hub-meta"><span>📚 50 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="RIAZ SOHAIL/index.html" class="author-hub-card" data-name="رياض سهيل" data-english="riaz sohail"><div class="hub-avatar">RS</div><div class="hub-title">رياض سهيل</div><div class="hub-title-english">RIAZ SOHAIL</div><div class="hub-meta"><span>📚 47 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZAHIDA DETHO/index.html" class="author-hub-card" data-name="زاهده ڏيٿو" data-english="zahida detho"><div class="hub-avatar">ZD</div><div class="hub-title">زاهده ڏيٿو</div><div class="hub-title-english">ZAHIDA DETHO</div><div class="hub-meta"><span>📚 30 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ZAIB SINDHI/index.html" class="author-hub-card" data-name="زيب سنڌي" data-english="zaib sindhi"><div class="hub-avatar">ZS</div><div class="hub-title">زيب سنڌي</div><div class="hub-title-english">ZAIB SINDHI</div><div class="hub-meta"><span>📚 254 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SATTAR SAROHI/index.html" class="author-hub-card" data-name="ستار سروهي" data-english="sattar sarohi"><div class="hub-avatar">SS</div><div class="hub-title">ستار سروهي</div><div class="hub-title-english">SATTAR SAROHI</div><div class="hub-meta"><span>📚 20 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SATRAM MEHSHWARI/index.html" class="author-hub-card" data-name="سترام مهيشوري" data-english="satram mehshwari"><div class="hub-avatar">SM</div><div class="hub-title">سترام مهيشوري</div><div class="hub-title-english">SATRAM MEHSHWARI</div><div class="hub-meta"><span>📚 11 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SEHAR GUL BHATTI/index.html" class="author-hub-card" data-name="سحر گل ڀٽي" data-english="sehar gul bhatti"><div class="hub-avatar">SG</div><div class="hub-title">سحر گل ڀٽي</div><div class="hub-title-english">SEHAR GUL BHATTI</div><div class="hub-meta"><span>📚 62 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SOHAIL SANGI/index.html" class="author-hub-card" data-name="سهيل سانگي" data-english="sohail sangi"><div class="hub-avatar">SS</div><div class="hub-title">سهيل سانگي</div><div class="hub-title-english">SOHAIL SANGI</div><div class="hub-meta"><span>📚 187 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SOHAIL MEMON/index.html" class="author-hub-card" data-name="سهيل ميمڻ" data-english="sohail memon"><div class="hub-avatar">SM</div><div class="hub-title">سهيل ميمڻ</div><div class="hub-title-english">SOHAIL MEMON</div><div class="hub-meta"><span>📚 371 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SIKANDAR HOLIO/index.html" class="author-hub-card" data-name="سڪندر هليو" data-english="sikandar holio"><div class="hub-avatar">SH</div><div class="hub-title">سڪندر هليو</div><div class="hub-title-english">SIKANDAR HOLIO</div><div class="hub-meta"><span>📚 158 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SHABNAM GUL/index.html" class="author-hub-card" data-name="شبنم گل" data-english="shabnam gul"><div class="hub-avatar">SG</div><div class="hub-title">شبنم گل</div><div class="hub-title-english">SHABNAM GUL</div><div class="hub-meta"><span>📚 101 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SHARMILA FAROOQI/index.html" class="author-hub-card" data-name="شرميلا فاروقي" data-english="sharmila farooqi"><div class="hub-avatar">SF</div><div class="hub-title">شرميلا فاروقي</div><div class="hub-title-english">SHARMILA FAROOQI</div><div class="hub-meta"><span>📚 17 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="SHOUKAT HUSSAIN SHORO/index.html" class="author-hub-card" data-name="شوڪت حسين شورو" data-english="shoukat hussain shoro"><div class="hub-avatar">SH</div><div class="hub-title">شوڪت حسين شورو</div><div class="hub-title-english">SHOUKAT HUSSAIN SHORO</div><div class="hub-meta"><span>📚 43 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="TARIQ ALAM ABRO/index.html" class="author-hub-card" data-name="طارق عالم ابڙو" data-english="tariq alam abro"><div class="hub-avatar">TA</div><div class="hub-title">طارق عالم ابڙو</div><div class="hub-title-english">TARIQ ALAM ABRO</div><div class="hub-meta"><span>📚 7 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ABDUL HAI PALEJO/index.html" class="author-hub-card" data-name="عبدالحئي پليجو" data-english="abdul hai palejo"><div class="hub-avatar">AH</div><div class="hub-title">عبدالحئي پليجو</div><div class="hub-title-english">ABDUL HAI PALEJO</div><div class="hub-meta"><span>📚 143 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ABDUL QADAR JUNEJO/index.html" class="author-hub-card" data-name="عبدالقادر جوڻيجو" data-english="abdul qadar junejo"><div class="hub-avatar">AQ</div><div class="hub-title">عبدالقادر جوڻيجو</div><div class="hub-title-english">ABDUL QADAR JUNEJO</div><div class="hub-meta"><span>📚 58 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ABDUL MAJEED NIZAMANI/index.html" class="author-hub-card" data-name="عبدالمجيد نظاماڻي" data-english="abdul majeed nizamani"><div class="hub-avatar">AM</div><div class="hub-title">عبدالمجيد نظاماڻي</div><div class="hub-title-english">ABDUL MAJEED NIZAMANI</div><div class="hub-meta"><span>📚 5 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="IRFANA MALLAH/index.html" class="author-hub-card" data-name="عرفانه ملاح" data-english="irfana mallah"><div class="hub-avatar">IM</div><div class="hub-title">عرفانه ملاح</div><div class="hub-title-english">IRFANA MALLAH</div><div class="hub-meta"><span>📚 47 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AZIZ SOLANGI/index.html" class="author-hub-card" data-name="عزيز سولنگي" data-english="aziz solangi"><div class="hub-avatar">AS</div><div class="hub-title">عزيز سولنگي</div><div class="hub-title-english">AZIZ SOLANGI</div><div class="hub-meta"><span>📚 34 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="ALI KAZI/index.html" class="author-hub-card" data-name="علي قاضي" data-english="ali kazi"><div class="hub-avatar">AK</div><div class="hub-title">علي قاضي</div><div class="hub-title-english">ALI KAZI</div><div class="hub-meta"><span>📚 179 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="AMAAR SINDHO/index.html" class="author-hub-card" data-name="عمار سنڌو" data-english="amaar sindho"><div class="hub-avatar">AS</div><div class="hub-title">عمار سنڌو</div><div class="hub-title-english">AMAAR SINDHO</div><div class="hub-meta"><span>📚 239 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="GHULAM NABI MUGHAL/index.html" class="author-hub-card" data-name="غلام نبي مغل" data-english="ghulam nabi mughal"><div class="hub-avatar">GN</div><div class="hub-title">غلام نبي مغل</div><div class="hub-title-english">GHULAM NABI MUGHAL</div><div class="hub-meta"><span>📚 8 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="FATIMA BHUTTO/index.html" class="author-hub-card" data-name="فاطمه ڀٽو" data-english="fatima bhutto"><div class="hub-avatar">FB</div><div class="hub-title">فاطمه ڀٽو</div><div class="hub-title-english">FATIMA BHUTTO</div><div class="hub-meta"><span>📚 3 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="FAIZ KHOSO/index.html" class="author-hub-card" data-name="فيض کوسو" data-english="faiz khoso"><div class="hub-avatar">FK</div><div class="hub-title">فيض کوسو</div><div class="hub-title-english">FAIZ KHOSO</div><div class="hub-meta"><span>📚 32 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="QADIR LASHARI/index.html" class="author-hub-card" data-name="قادر لاشاري" data-english="qadir lashari"><div class="hub-avatar">QL</div><div class="hub-title">قادر لاشاري</div><div class="hub-title-english">QADIR LASHARI</div><div class="hub-meta"><span>📚 5 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="QURBAN BALOCH/index.html" class="author-hub-card" data-name="قربان بلوچ" data-english="qurban baloch"><div class="hub-avatar">QB</div><div class="hub-title">قربان بلوچ</div><div class="hub-title-english">QURBAN BALOCH</div><div class="hub-meta"><span>📚 84 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="LATIF JAMAL/index.html" class="author-hub-card" data-name="لطيف جمال" data-english="latif jamal"><div class="hub-avatar">LJ</div><div class="hub-title">لطيف جمال</div><div class="hub-title-english">LATIF JAMAL</div><div class="hub-meta"><span>📚 187 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="LIAQUAT AZIZ/index.html" class="author-hub-card" data-name="لياقت عزيز" data-english="liaquat aziz"><div class="hub-avatar">LA</div><div class="hub-title">لياقت عزيز</div><div class="hub-title-english">LIAQUAT AZIZ</div><div class="hub-meta"><span>📚 175 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MARVI MEMON/index.html" class="author-hub-card" data-name="ماروي ميمڻ" data-english="marvi memon"><div class="hub-avatar">MM</div><div class="hub-title">ماروي ميمڻ</div><div class="hub-title-english">MARVI MEMON</div><div class="hub-meta"><span>📚 19 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MARK TELLY/index.html" class="author-hub-card" data-name="مارڪ ٽيلي" data-english="mark telly"><div class="hub-avatar">MT</div><div class="hub-title">مارڪ ٽيلي</div><div class="hub-title-english">MARK TELLY</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MOHAMMAD IBRAHIM JOYO/index.html" class="author-hub-card" data-name="محمد ابراهيم جويو" data-english="mohammad ibrahim joyo"><div class="hub-avatar">MI</div><div class="hub-title">محمد ابراهيم جويو</div><div class="hub-title-english">MOHAMMAD IBRAHIM JOYO</div><div class="hub-meta"><span>📚 74 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MUHAMMAD ALI SHAH/index.html" class="author-hub-card" data-name="محمد علي شاهه" data-english="muhammad ali shah"><div class="hub-avatar">MA</div><div class="hub-title">محمد علي شاهه</div><div class="hub-title-english">MUHAMMAD ALI SHAH</div><div class="hub-meta"><span>📚 13 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MEHMOOD MUGHAL/index.html" class="author-hub-card" data-name="محمود مغل" data-english="mehmood mughal"><div class="hub-avatar">MM</div><div class="hub-title">محمود مغل</div><div class="hub-title-english">MEHMOOD MUGHAL</div><div class="hub-meta"><span>📚 293 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MASOOD LOHAR/index.html" class="author-hub-card" data-name="مسعود لوهار" data-english="masood lohar"><div class="hub-avatar">ML</div><div class="hub-title">مسعود لوهار</div><div class="hub-title-english">MASOOD LOHAR</div><div class="hub-meta"><span>📚 13 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MUSHTAFA NANGRAJ/index.html" class="author-hub-card" data-name="مصطفيٰ نانگراج" data-english="mushtafa nangraj"><div class="hub-avatar">MN</div><div class="hub-title">مصطفيٰ نانگراج</div><div class="hub-title-english">MUSHTAFA NANGRAJ</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MASHOOQ ODHANO/index.html" class="author-hub-card" data-name="معشوق اوڌاڻو" data-english="mashooq odhano"><div class="hub-avatar">MO</div><div class="hub-title">معشوق اوڌاڻو</div><div class="hub-title-english">MASHOOQ ODHANO</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MUMTAZ BUKHARI/index.html" class="author-hub-card" data-name="ممتاز بخاري" data-english="mumtaz bukhari"><div class="hub-avatar">MB</div><div class="hub-title">ممتاز بخاري</div><div class="hub-title-english">MUMTAZ BUKHARI</div><div class="hub-meta"><span>📚 46 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MANZOOR MIRANI/index.html" class="author-hub-card" data-name="منظور ميراڻي" data-english="manzoor mirani"><div class="hub-avatar">MM</div><div class="hub-title">منظور ميراڻي</div><div class="hub-title-english">MANZOOR MIRANI</div><div class="hub-meta"><span>📚 291 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MANOJ KUMAR/index.html" class="author-hub-card" data-name="منوج ڪمار" data-english="manoj kumar"><div class="hub-avatar">MK</div><div class="hub-title">منوج ڪمار</div><div class="hub-title-english">MANOJ KUMAR</div><div class="hub-meta"><span>📚 87 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MEHTAB AKBAR RASHDI/index.html" class="author-hub-card" data-name="مهتاب اڪبر راشدي" data-english="mehtab akbar rashdi"><div class="hub-avatar">MA</div><div class="hub-title">مهتاب اڪبر راشدي</div><div class="hub-title-english">MEHTAB AKBAR RASHDI</div><div class="hub-meta"><span>📚 3 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="MAKAN SHAH RIZVI/index.html" class="author-hub-card" data-name="مکان شاهه رضوي" data-english="makan shah rizvi"><div class="hub-avatar">MS</div><div class="hub-title">مکان شاهه رضوي</div><div class="hub-title-english">MAKAN SHAH RIZVI</div><div class="hub-meta"><span>📚 72 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NASIR ALI PANHWAR/index.html" class="author-hub-card" data-name="ناصر علي پنهور" data-english="nasir ali panhwar"><div class="hub-avatar">NA</div><div class="hub-title">ناصر علي پنهور</div><div class="hub-title-english">NASIR ALI PANHWAR</div><div class="hub-meta"><span>📚 14 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NISAR KHOKHAR/index.html" class="author-hub-card" data-name="نثار کوکر" data-english="nisar khokhar"><div class="hub-avatar">NK</div><div class="hub-title">نثار کوکر</div><div class="hub-title-english">NISAR KHOKHAR</div><div class="hub-meta"><span>📚 193 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NISAR KHORO/index.html" class="author-hub-card" data-name="نثار کھڙو" data-english="nisar khoro"><div class="hub-avatar">NK</div><div class="hub-title">نثار کھڙو</div><div class="hub-title-english">NISAR KHORO</div><div class="hub-meta"><span>📚 23 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NUZHAT PATHAN/index.html" class="author-hub-card" data-name="نزهت پٺاڻ" data-english="nuzhat pathan"><div class="hub-avatar">NP</div><div class="hub-title">نزهت پٺاڻ</div><div class="hub-title-english">NUZHAT PATHAN</div><div class="hub-meta"><span>📚 3 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NASEER MIRZA/index.html" class="author-hub-card" data-name="نصير مرزا" data-english="naseer mirza"><div class="hub-avatar">NM</div><div class="hub-title">نصير مرزا</div><div class="hub-title-english">NASEER MIRZA</div><div class="hub-meta"><span>📚 561 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NASEER MEMON/index.html" class="author-hub-card" data-name="نصير ميمڻ" data-english="naseer memon"><div class="hub-avatar">NM</div><div class="hub-title">نصير ميمڻ</div><div class="hub-title-english">NASEER MEMON</div><div class="hub-meta"><span>📚 202 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NIZAM SHAIKH/index.html" class="author-hub-card" data-name="نظام شيخ" data-english="nizam shaikh"><div class="hub-avatar">NS</div><div class="hub-title">نظام شيخ</div><div class="hub-title-english">NIZAM SHAIKH</div><div class="hub-meta"><span>📚 1 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="NAWAZ KUMBHAR/index.html" class="author-hub-card" data-name="نواز ڪنڀر" data-english="nawaz kumbhar"><div class="hub-avatar">NK</div><div class="hub-title">نواز ڪنڀر</div><div class="hub-title-english">NAWAZ KUMBHAR</div><div class="hub-meta"><span>📚 212 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="M. B. SOOMRO/index.html" class="author-hub-card" data-name="يم بي سومرو" data-english="m. b. soomro"><div class="hub-avatar">MB</div><div class="hub-title">يم بي سومرو</div><div class="hub-title-english">M. B. SOOMRO</div><div class="hub-meta"><span>📚 154 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="YOUSUF LAGHARI/index.html" class="author-hub-card" data-name="يوسف لغاري" data-english="yousuf laghari"><div class="hub-avatar">YL</div><div class="hub-title">يوسف لغاري</div><div class="hub-title-english">YOUSUF LAGHARI</div><div class="hub-meta"><span>📚 24 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DR. AYUB SHAIKH/index.html" class="author-hub-card" data-name="ڊاڪٽر ايوب شيخ" data-english="dr. ayub shaikh"><div class="hub-avatar">DA</div><div class="hub-title">ڊاڪٽر ايوب شيخ</div><div class="hub-title-english">DR. AYUB SHAIKH</div><div class="hub-meta"><span>📚 240 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DR. AZIZ TALPUR/index.html" class="author-hub-card" data-name="ڊاڪٽر عزيز ٽالپر" data-english="dr. aziz talpur"><div class="hub-avatar">DA</div><div class="hub-title">ڊاڪٽر عزيز ٽالپر</div><div class="hub-title-english">DR. AZIZ TALPUR</div><div class="hub-meta"><span>📚 261 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DR. MUSARRAT KHOWAJA/index.html" class="author-hub-card" data-name="ڊاڪٽر مسرت خواجه" data-english="dr. musarrat khowaja"><div class="hub-avatar">DM</div><div class="hub-title">ڊاڪٽر مسرت خواجه</div><div class="hub-title-english">DR. MUSARRAT KHOWAJA</div><div class="hub-meta"><span>📚 194 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="DR. MIR ALAM MARI/index.html" class="author-hub-card" data-name="ڊاڪٽر مير عالم مري" data-english="dr. mir alam mari"><div class="hub-avatar">DM</div><div class="hub-title">ڊاڪٽر مير عالم مري</div><div class="hub-title-english">DR. MIR ALAM MARI</div><div class="hub-meta"><span>📚 32 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="KHELDAS KOHISTANI/index.html" class="author-hub-card" data-name="کيلداس ڪوهستاني" data-english="kheldas kohistani"><div class="hub-avatar">KK</div><div class="hub-title">کيلداس ڪوهستاني</div><div class="hub-title-english">KHELDAS KOHISTANI</div><div class="hub-meta"><span>📚 12 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="KHATAO JANI/index.html" class="author-hub-card" data-name="کٽائو جاني" data-english="khatao jani"><div class="hub-avatar">KJ</div><div class="hub-title">کٽائو جاني</div><div class="hub-title-english">KHATAO JANI</div><div class="hub-meta"><span>📚 38 مضمون</span><span>سائيٽ ڏسو ←</span></div></a><a href="GULSHAN LAGHARI/index.html" class="author-hub-card" data-name="گلشن لغاري" data-english="gulshan laghari"><div class="hub-avatar">GL</div><div class="hub-title">گلشن لغاري</div><div class="hub-title-english">GULSHAN LAGHARI</div><div class="hub-meta"><span>📚 9 مضمون</span><span>سائيٽ ڏسو ←</span></div></a></main>
+  <div class="container" id="app">
+    <!-- Dynamic Single-Page App Views render here -->
   </div>
+
   <script>
-const savedTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
-document.body.className = savedTheme;
+    let authorsData = [];
+    let articlesIndex = [];
+    let currentTheme = localStorage.getItem('kawish_theme_static') || 'theme-sepia';
+    let currentFilterYear = null;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const activeBtn = document.querySelector(`.theme-btn[data-theme="${savedTheme}"]`);
-  if (activeBtn) activeBtn.classList.add('active');
-});
+    document.body.className = currentTheme;
 
-function changeTheme(themeName) {
-  document.body.className = themeName;
-  localStorage.setItem('kawish_theme_static', themeName);
-  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
-  const activeBtn = document.querySelector(`.theme-btn[data-theme="${themeName}"]`);
-  if (activeBtn) activeBtn.classList.add('active');
-}
-
-function filterArticles() {
-  const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
-  const cards = document.querySelectorAll('.article-card');
-  let visibleCount = 0;
-  cards.forEach(card => {
-    const title = card.getAttribute('data-title') || '';
-    const snippet = card.getAttribute('data-snippet') || '';
-    const year = card.getAttribute('data-year') || '';
-    const matchesSearch = !query || title.includes(query) || snippet.includes(query);
-    const matchesYear = !window.selectedYearFilter || year === window.selectedYearFilter;
-    if (matchesSearch && matchesYear) { card.style.display = 'block'; visibleCount++; }
-    else { card.style.display = 'none'; }
-  });
-  const counterEl = document.getElementById('visibleCount');
-  if (counterEl) counterEl.textContent = visibleCount;
-}
-
-function filterAuthorsHub() {
-  const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
-  const cards = document.querySelectorAll('.author-hub-card');
-  let visibleCount = 0;
-  cards.forEach(card => {
-    const title = card.getAttribute('data-name') || '';
-    const englishName = card.getAttribute('data-english') || '';
-    if (!query || title.includes(query) || englishName.includes(query)) {
-      card.style.display = 'flex';
-      visibleCount++;
-    } else {
-      card.style.display = 'none';
+    // Load Central JSON Data
+    async function initData() {
+      try {
+        const [authRes, artRes] = await Promise.all([
+          fetch('data/authors.json'),
+          fetch('data/articles_index.json')
+        ]);
+        authorsData = await authRes.json();
+        articlesIndex = await artRes.json();
+        handleRoute();
+      } catch (err) {
+        console.error('Error loading CMS data:', err);
+        document.getElementById('app').innerHTML = '<div style="text-align:center; padding: 40px;"><h2>ڊيٽا لوڊ ڪرڻ ۾ نقص پيش آيو.</h2></div>';
+      }
     }
-  });
-  const counterEl = document.getElementById('visibleAuthorCount');
-  if (counterEl) counterEl.textContent = visibleCount;
-}
 
-function filterYear(yearStr) {
-  window.selectedYearFilter = (window.selectedYearFilter === yearStr) ? null : yearStr;
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.classList.toggle('active', yearStr && btn.textContent.includes(yearStr) && window.selectedYearFilter === yearStr);
-  });
-  filterArticles();
-}
+    // Hash Router for Single Page CMS
+    window.addEventListener('hashchange', handleRoute);
 
-function copyArticleContent() {
-  const heading = document.querySelector('.article-heading')?.innerText || '';
-  const bodyText = document.querySelector('.article-body')?.innerText || '';
-  const fullText = heading + '\n\n' + bodyText;
-  
-  navigator.clipboard.writeText(fullText).then(() => {
-    const copyBtn = document.getElementById('copyArticleBtn');
-    if (copyBtn) {
-      copyBtn.classList.add('copied');
-      copyBtn.innerHTML = '<span>✓ ڪاپي ٿي ويو!</span>';
-      setTimeout(() => {
-        copyBtn.classList.remove('copied');
-        copyBtn.innerHTML = '<span>📋 مضمون ڪاپي ڪريو</span>';
-      }, 2500);
+    function handleRoute() {
+      const hash = window.location.hash || '#hub';
+      if (hash.startsWith('#author/')) {
+        const authorId = decodeURIComponent(hash.replace('#author/', ''));
+        renderAuthorView(authorId);
+      } else if (hash.startsWith('#article/')) {
+        const articleId = decodeURIComponent(hash.replace('#article/', ''));
+        renderArticleView(articleId);
+      } else {
+        renderHubView();
+      }
+      window.scrollTo(0, 0);
     }
-  }).catch(err => {
-    console.error('Failed to copy: ', err);
-  });
-}
-</script>
+
+    function changeTheme(themeName) {
+      currentTheme = themeName;
+      document.body.className = themeName;
+      localStorage.setItem('kawish_theme_static', themeName);
+      document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-theme') === themeName);
+      });
+    }
+
+    // Render Shared Top Nav
+    function getNavHTML(backLink, backText) {
+      return `
+        <nav class="nav-toolbar">
+          <div style="display: flex; gap: 8px; align-items: center;">
+            ${backLink ? `<a href="${backLink}" class="btn-back"><span>${backText}</span></a>` : ''}
+            <a href="#hub" class="btn-back"><span>🏠 مکيه صفحو</span></a>
+          </div>
+          <div class="theme-controls">
+            <button class="theme-btn ${currentTheme === 'theme-light' ? 'active' : ''}" data-theme="theme-light" onclick="changeTheme('theme-light')">اڇو</button>
+            <button class="theme-btn ${currentTheme === 'theme-sepia' ? 'active' : ''}" data-theme="theme-sepia" onclick="changeTheme('theme-sepia')">سيپيا</button>
+            <button class="theme-btn ${currentTheme === 'theme-dark' ? 'active' : ''}" data-theme="theme-dark" onclick="changeTheme('theme-dark')">تاريڪ</button>
+          </div>
+        </nav>
+      `;
+    }
+
+    // 1. Hub Portal View (Dynamic Hash Links to avoid 404s)
+    function renderHubView() {
+      const app = document.getElementById('app');
+      const cardsHTML = authorsData.map(a => `
+        <a href="#author/${encodeURIComponent(a.id)}" class="author-hub-card" data-name="${a.name_sd.toLowerCase()}" data-english="${a.name_en.toLowerCase()}">
+          <div class="hub-avatar">${a.initials}</div>
+          <div class="hub-title">${a.name_sd}</div>
+          <div class="hub-title-english">${a.name_en}</div>
+          <div class="hub-meta">
+            <span>📚 ${a.count} مضمون</span>
+            <span>سائيٽ ڏسو ←</span>
+          </div>
+        </a>
+      `).join('');
+
+      app.innerHTML = `
+        ${getNavHTML(null, null)}
+        <header class="main-header">
+          <div class="author-badge">K</div>
+          <h1>مصنفن جو مکيه پورٽل</h1>
+          <p>ڪُل <span id="visibleAuthorCount">${authorsData.length}</span> مصنفن جا مضمون موجود آهن</p>
+        </header>
+
+        <section class="controls-card">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="hubSearchInput" class="search-input" placeholder="مصنف جي نالي مان ڳوليو..." oninput="filterAuthorsHub()">
+          </div>
+        </section>
+
+        <main class="authors-grid">${cardsHTML}</main>
+      `;
+    }
+
+    // 2. Author Articles List View
+    function renderAuthorView(authorId) {
+      const app = document.getElementById('app');
+      const author = authorsData.find(a => a.id === authorId) || { name_sd: authorId, name_en: authorId, initials: 'KA' };
+      const authorArticles = articlesIndex.filter(a => a.author_id === authorId);
+      
+      const years = [...new Set(authorArticles.map(a => a.year).filter(Boolean))].sort().reverse();
+      const yearFiltersHTML = years.map(y => `
+        <button class="filter-btn ${currentFilterYear === y ? 'active' : ''}" onclick="filterYear('${y}')">${y}ع</button>
+      `).join('');
+
+      const cardsHTML = authorArticles.map(a => `
+        <div class="article-card-wrapper">
+          <a href="#article/${encodeURIComponent(a.id)}" class="article-card" data-title="${a.title.toLowerCase()}" data-year="${a.year}" data-snippet="${a.snippet.toLowerCase()}">
+            <div class="card-header-row">
+              <h2 class="card-title">${a.title}</h2>
+              <span class="card-date">${a.date}</span>
+            </div>
+            <p class="card-snippet">${a.snippet}</p>
+            <div class="card-footer">
+              <span>⏱️ ${a.readTime} منٽ</span>
+              <span class="card-meta-tag">${a.year ? a.year + 'ع' : 'آرڪائيو'}</span>
+            </div>
+          </a>
+        </div>
+      `).join('');
+
+      app.innerHTML = `
+        ${getNavHTML('#hub', '🏠 مکيه صفحو')}
+        <header class="main-header">
+          <div class="author-badge">${author.initials}</div>
+          <h1>${author.name_sd}</h1>
+          <div class="author-english-sub">${author.name_en}</div>
+          <p>ڪُل <span id="visibleCount">${authorArticles.length}</span> مضمون</p>
+        </header>
+
+        <section class="controls-card">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" class="search-input" placeholder="مضمون جي عنوان يا مواد مان ڳوليو..." oninput="filterArticles()">
+          </div>
+          <div class="filters-row">
+            <span style="font-size: 13px; color: var(--text-muted);">سال:</span>
+            ${yearFiltersHTML}
+          </div>
+        </section>
+
+        <main class="articles-grid">${cardsHTML}</main>
+      `;
+
+      filterArticles();
+    }
+
+    // 3. Article Reading View
+    async function renderArticleView(articleId) {
+      const app = document.getElementById('app');
+      const meta = articlesIndex.find(a => a.id === articleId);
+      const author = authorsData.find(a => a.id === (meta ? meta.author_id : '')) || { name_sd: 'مصنف' };
+
+      app.innerHTML = `
+        ${getNavHTML('#author/' + encodeURIComponent(meta ? meta.author_id : ''), '← ' + author.name_sd + ' جا مضمون')}
+        <main class="reading-pane">
+          <div style="text-align: center; padding: 40px;">
+            <p>مضمون لوڊ ٿي رهيو آهي...</p>
+          </div>
+        </main>
+      `;
+
+      try {
+        const res = await fetch(`data/articles/${encodeURIComponent(articleId)}.json`);
+        const article = await res.json();
+        const origUrlHTML = article.url ? `<span>🔗 <a href="${article.url}" class="meta-link" target="_blank" rel="noopener">ڪاوش اخبار تي اصل مضمون</a></span>` : '';
+
+        app.innerHTML = `
+          ${getNavHTML('#author/' + encodeURIComponent(article.author_id), '← ' + author.name_sd + ' جا مضمون')}
+          <main class="reading-pane">
+            <header class="article-meta-header">
+              <h1 class="article-heading">${article.title}</h1>
+              <div class="meta-info-row">
+                <span>✍️ ${author.name_sd}</span>
+                <span>📅 ${article.date}</span>
+                <span>⏱️ ${article.readTime} منٽ</span>
+                ${origUrlHTML}
+              </div>
+            </header>
+
+            <article class="article-body">${article.body}</article>
+            
+            <div class="copy-action-bar">
+              <button id="copyArticleBtn" class="btn-copy-article" onclick="copyArticleContent()">
+                <span>📋 مضمون ڪاپي ڪريو</span>
+              </button>
+            </div>
+          </main>
+        `;
+      } catch (err) {
+        console.error('Error fetching article detail:', err);
+        app.innerHTML = `
+          ${getNavHTML('#hub', '🏠 مکيه صفحو')}
+          <main class="reading-pane">
+            <div style="text-align: center; padding: 40px;">
+              <h2>مضمون لوڊ ڪرڻ ۾ نقص.</h2>
+              ${meta && meta.url ? `<p style="margin-top:15px;"><a href="${meta.url}" target="_blank" class="btn-copy-article">🔗 ڪاوش اخبار تي اصل مضمون پڙهو</a></p>` : ''}
+            </div>
+          </main>
+        `;
+      }
+    }
+
+    // Filtering Helpers
+    function filterAuthorsHub() {
+      const query = document.getElementById('hubSearchInput')?.value.toLowerCase().trim() || '';
+      const cards = document.querySelectorAll('.author-hub-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const title = card.getAttribute('data-name') || '';
+        const englishName = card.getAttribute('data-english') || '';
+        if (!query || title.includes(query) || englishName.includes(query)) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      const counterEl = document.getElementById('visibleAuthorCount');
+      if (counterEl) counterEl.textContent = visibleCount;
+    }
+
+    function filterArticles() {
+      const query = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+      const wrappers = document.querySelectorAll('.article-card-wrapper');
+      let visibleCount = 0;
+      wrappers.forEach(w => {
+        const card = w.querySelector('.article-card');
+        const title = card.getAttribute('data-title') || '';
+        const snippet = card.getAttribute('data-snippet') || '';
+        const year = card.getAttribute('data-year') || '';
+        const matchesSearch = !query || title.includes(query) || snippet.includes(query);
+        const matchesYear = !currentFilterYear || year === currentFilterYear;
+        if (matchesSearch && matchesYear) {
+          w.style.display = 'block';
+          visibleCount++;
+        } else {
+          w.style.display = 'none';
+        }
+      });
+      const counterEl = document.getElementById('visibleCount');
+      if (counterEl) counterEl.textContent = visibleCount;
+    }
+
+    function filterYear(yearStr) {
+      currentFilterYear = (currentFilterYear === yearStr) ? null : yearStr;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', currentFilterYear && btn.textContent.includes(currentFilterYear));
+      });
+      filterArticles();
+    }
+
+    function copyArticleContent() {
+      const heading = document.querySelector('.article-heading')?.innerText || '';
+      const bodyText = document.querySelector('.article-body')?.innerText || '';
+      const fullText = heading + '\n\n' + bodyText;
+      
+      navigator.clipboard.writeText(fullText).then(() => {
+        const copyBtn = document.getElementById('copyArticleBtn');
+        if (copyBtn) {
+          copyBtn.classList.add('copied');
+          copyBtn.innerHTML = '<span>✓ ڪاپي ٿي ويو!</span>';
+          setTimeout(() => {
+            copyBtn.classList.remove('copied');
+            copyBtn.innerHTML = '<span>📋 مضمون ڪاپي ڪريو</span>';
+          }, 2500);
+        }
+      }).catch(err => console.error(err));
+    }
+
+    // Start Single Page Application
+    initData();
+  </script>
 </body>
 </html>
