@@ -19,6 +19,35 @@
 
     document.body.className = currentTheme;
 
+    // Comprehensive client-side legacy font & entity decoder map
+    const cpMap = {
+      'Ё': 'ف', 'д': 'ن', 'н': 'ي', '”': 'س', 'б': 'ل', 'Ќ': 'ح',
+      'ў': 'ظ', 'Ш': 'ٽ', '«': 'ا', 'џ': 'غ', 'г': 'م', '¬': 'آ',
+      'ен': 'هي', 'њ': '؟', '—': 'ر', 'Џ': 'ع', 'ж': 'و', 'Ў': 'ف',
+      '∆': 'ي', 'ڇ': 'چ', 'ڏ': 'د', 'Б': 'پ', 'ٽ': 'ت', 'ћ': 'ت',
+      'Ѕ': 'ي', 'ц': 'ء', '°': '۔', 'ڙ': 'ڙ', 'ڀ': 'ڀ', '‘': 'ش',
+      '÷': 'ض', 'Р': 'ذ', 'х': 'خ', 'µ': 'ع', '’': 'ط', 'ќ': 'خ',
+      'ڪ': 'ڪ', 'ڊ': 'ڊ', 'е': 'ه', 'ڻ': 'ڻ'
+    };
+
+    function sanitizeAndDecodeText(str) {
+      if (!str) return '';
+      
+      // 1. Decode legacy numeric/hashed HTML entities (e.g., #1706; or &#1706;)
+      let text = str.replace(/#(\d+);/g, '&#$1;');
+      const txt = document.createElement('textarea');
+      txt.innerHTML = text;
+      text = txt.value.replace(/&/g, '');
+
+      // 2. Decode legacy font byte mis-mappings
+      let result = '';
+      for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        result += cpMap[ch] || ch;
+      }
+      return result;
+    }
+
     // Load Central JSON Data
     async function initData() {
       try {
@@ -78,7 +107,7 @@
       `;
     }
 
-    // 1. Hub Portal View (Dynamic Hash Links to avoid 404s)
+    // 1. Hub Portal View
     function renderHubView() {
       const app = document.getElementById('app');
       const cardsHTML = authorsData.map(a => `
@@ -270,12 +299,16 @@
       filterArticles();
     }
 
+    // Copy Content Function with Automatic Sanitization & Decoding
     function copyArticleContent() {
-      const heading = document.querySelector('.article-heading')?.innerText || '';
-      const bodyText = document.querySelector('.article-body')?.innerText || '';
-      const fullText = heading + '\n\n' + bodyText;
+      const rawHeading = document.querySelector('.article-heading')?.innerText || '';
+      const rawBodyText = document.querySelector('.article-body')?.innerText || '';
       
-      navigator.clipboard.writeText(fullText).then(() => {
+      const cleanHeading = sanitizeAndDecodeText(rawHeading);
+      const cleanBody = sanitizeAndDecodeText(rawBodyText);
+      const fullCleanText = cleanHeading + '\n\n' + cleanBody;
+      
+      navigator.clipboard.writeText(fullCleanText).then(() => {
         const copyBtn = document.getElementById('copyArticleBtn');
         if (copyBtn) {
           copyBtn.classList.add('copied');
@@ -288,7 +321,7 @@
       }).catch(err => console.error(err));
     }
 
-    // Start Single Page Application
+    // Start App
     initData();
   </script>
 </body>
