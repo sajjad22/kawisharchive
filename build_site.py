@@ -527,11 +527,16 @@ def build_author_site(author_dir):
     author_sindhi = get_sindhi_author_name(author_english)
     
     files = [f for f in os.listdir(author_dir) if f.endswith('.md')]
-    if not files: return None
     articles_dir = os.path.join(author_dir, 'articles')
     os.makedirs(articles_dir, exist_ok=True)
     with open(os.path.join(author_dir, 'style.css'), 'w', encoding='utf-8') as f: f.write(STYLE_CSS)
     initials = "".join([w[0] for w in author_english.split() if w])[:2].upper() or "KA"
+
+    if not files:
+        html_files = [f for f in os.listdir(articles_dir) if f.endswith('.html')] if os.path.exists(articles_dir) else []
+        if html_files or os.path.exists(os.path.join(author_dir, 'index.html')):
+            return {'author_english': author_english, 'author_sindhi': author_sindhi, 'count': len(html_files), 'dir': author_english, 'initials': initials}
+        return None
     articles_data = []
     for idx, filename in enumerate(files):
         filepath = os.path.join(author_dir, filename)
